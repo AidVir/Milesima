@@ -1,0 +1,64 @@
+---
+import '@fontsource/cormorant-garamond/500.css';
+import '@fontsource/cormorant-garamond/600.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '../styles/global.css';
+import { localePath, ui, withBase, type Locale } from '../i18n/ui';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  locale: Locale;
+  title?: string;
+  description?: string;
+  path?: string;
+}
+
+const {
+  locale,
+  title = ui[locale].metaTitle,
+  description = ui[locale].metaDescription,
+  path = '/',
+} = Astro.props;
+const t = ui[locale];
+const pagePath = localePath(locale, path);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#F6F1E7" />
+    <link rel="icon" href={withBase('/favicon.png')} type="image/png" />
+    <link rel="alternate" hreflang="lt" href={localePath('lt', path)} />
+    <link rel="alternate" hreflang="en" href={localePath('en', path)} />
+    <link rel="alternate" hreflang="x-default" href={localePath('lt', path)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={locale === 'lt' ? 'lt_LT' : 'en_GB'} />
+    <meta property="og:url" content={pagePath} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'MILESIMA',
+        description: t.metaDescription,
+        url: localePath(locale, '/'),
+      })}
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">
+      {t.skip}
+    </a>
+    <Header locale={locale} />
+    <slot />
+    <Footer locale={locale} />
+  </body>
+</html>

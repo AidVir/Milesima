@@ -1,0 +1,63 @@
+---
+import { getByProducer, producers } from '../data/catalog';
+import { localePath, ui, type Locale } from '../i18n/ui';
+import Base from '../layouts/Base.astro';
+import EditorialHeading from './EditorialHeading.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = ui[locale];
+const list = producers
+  .map((producer) => ({ producer, drinks: getByProducer(producer.id) }))
+  .filter((item) => item.drinks.length > 0);
+---
+
+<Base
+  locale={locale}
+  path="/producers"
+  title={`${t.producersTitle} — MILESIMA`}
+  description={t.producersIntro}
+>
+  <main id="main" class="section">
+    <div class="wrap">
+      <EditorialHeading
+        level="h1"
+        title={t.producersTitle}
+        copy={t.producersIntro}
+      />
+      <ul class="producers">
+        {list.map(({ producer, drinks }) => (
+          <li class="producer" id={producer.id}>
+            <div class="producer-head">
+              <h2 class="producer-name">{producer.name}</h2>
+              <p class="producer-place">{producer.place[locale]}</p>
+            </div>
+            <div class="producer-body">
+              {producer.story[locale] && (
+                <p class="producer-story">{producer.story[locale]}</p>
+              )}
+              <p class="producer-drinks-label">{t.producerDrinks}</p>
+              <ul class="producer-drinks">
+                {drinks.map((drink) => (
+                  <li>
+                    <a
+                      href={localePath(
+                        locale,
+                        `/portfolio/product/${drink.slug}`,
+                      )}
+                    >
+                      {drink.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </main>
+</Base>

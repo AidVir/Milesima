@@ -1,0 +1,43 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  copy?: string;
+  actionHref?: string;
+  actionLabel?: string;
+  titleId?: string;
+  align?: 'start' | 'center';
+  level?: 'h1' | 'h2';
+}
+
+const {
+  eyebrow,
+  title,
+  copy,
+  actionHref,
+  actionLabel,
+  titleId,
+  align = 'start',
+  level = 'h2',
+} = Astro.props;
+const Title = level;
+---
+
+<div
+  class:list={['editorial', `is-${align}`, { 'has-eyebrow': Boolean(eyebrow) }]}
+>
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  <Title id={titleId} class="editorial-title">
+    {title}
+  </Title>
+  {(copy || actionLabel) && (
+    <div class="editorial-copy">
+      {copy && <p>{copy}</p>}
+      {actionHref && actionLabel && (
+        <a class="text-action" href={actionHref}>
+          {actionLabel} →
+        </a>
+      )}
+    </div>
+  )}
+</div>

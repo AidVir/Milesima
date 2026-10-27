@@ -1,0 +1,12 @@
+---
+import { categories, type CategoryId } from '../../../data/catalog';
+import CatalogPage from '../../../components/CatalogPage.astro';
+
+export function getStaticPaths() {
+  return categories.map((category) => ({ params: { category: category.id } }));
+}
+
+const { category } = Astro.params;
+---
+
+<CatalogPage locale="en" category={category as CategoryId} />

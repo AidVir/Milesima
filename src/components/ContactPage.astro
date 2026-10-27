@@ -1,0 +1,32 @@
+---
+import { ui, type Locale } from '../i18n/ui';
+import Base from '../layouts/Base.astro';
+import ContactForm from './ContactForm.astro';
+import EditorialHeading from './EditorialHeading.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = ui[locale];
+---
+
+<Base
+  locale={locale}
+  path="/contact"
+  title={`${t.contactTitle} — MILESIMA`}
+  description={t.contactText}
+>
+  <main id="main" class="section">
+    <div class="wrap">
+      <EditorialHeading
+        level="h1"
+        eyebrow={t.contactEyebrow}
+        title={t.contactTitle}
+        copy={t.contactText}
+      />
+      <ContactForm locale={locale} />
+    </div>
+  </main>
+</Base>

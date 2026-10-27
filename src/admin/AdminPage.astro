@@ -1,0 +1,1430 @@
+---
+// Local drinks admin. Injected only by `astro dev` (see integration.ts); it is not built or deployed.
+import '@fontsource/cormorant-garamond/500.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '../styles/global.css';
+import { categoryLabels, tagLabels } from '../data/labels';
+import { tagIds } from '../data/schema';
+
+const pairs = [
+  { key: 'country', label: 'Country', required: true },
+  { key: 'region', label: 'Region' },
+  {
+    key: 'origin',
+    label: 'Detailed origin',
+    hint: 'For example cognac crus. Shown on the product page only.',
+  },
+  { key: 'style', label: 'Style / type' },
+  { key: 'composition', label: 'Grapes or ingredients' },
+  { key: 'colour', label: 'Colour' },
+  { key: 'aroma', label: 'Aroma' },
+  { key: 'palate', label: 'Palate' },
+  {
+    key: 'notes',
+    label: 'Notes',
+    long: true,
+    hint: 'Production notes and serving suggestions.',
+  },
+  {
+    key: 'story',
+    label: 'Story',
+    long: true,
+    hint: "Leave empty to use the producer's story.",
+  },
+];
+const categoryOptions = categoryLabels.map((category) => ({
+  id: category.id,
+  label: category.label.en,
+}));
+const tagOptions = tagIds.map((id) => ({ id, label: tagLabels[id].en }));
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Drinks admin — MILESIMA</title>
+    <link rel="icon" href="/favicon.png" type="image/png" />
+  </head>
+  <body class="admin">
+    <header class="admin-header">
+      <div class="wrap admin-header-inner">
+        <div>
+          <p class="eyebrow">MILESIMA · Local admin</p>
+          <h1 class="admin-title">Drinks</h1>
+        </div>
+        <div class="admin-header-actions">
+          <a
+            class="text-action"
+            href="/portfolio"
+            target="_blank"
+            rel="noopener"
+          >
+            View site →
+          </a>
+          <button class="btn" type="button" data-add>
+            Add drink
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap admin-main">
+      <p class="admin-note">
+        Changes are saved to <code>src/data/drinks.json</code> on this computer,
+        and the dev site updates at once. The published site changes only after{' '}
+        <code>npm run build</code> and a deploy. This page exists only while
+        <code>npm run dev</code> runs, and only answers on localhost.
+      </p>
+
+      <div class="admin-tools" role="search">
+        <label class="field">
+          <span>Search</span>
+          <input type="search" data-search placeholder="Name or producer" />
+        </label>
+        <label class="field">
+          <span>Category</span>
+          <select data-filter-category>
+            <option value="">All categories</option>
+            {categoryOptions.map((category) => (
+              <option value={category.id}>{category.label}</option>
+            ))}
+          </select>
+        </label>
+        <label class="field">
+          <span>Status</span>
+          <select data-filter-status>
+            <option value="">All</option>
+            <option value="active">Active</option>
+            <option value="hidden">Hidden</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="admin-status" role="status" aria-live="polite" data-status>
+        Loading drinks…
+      </p>
+      <div data-list></div>
+    </main>
+
+    <dialog class="editor" data-editor aria-labelledby="editor-title">
+      <form class="editor-form" data-form novalidate>
+        <div class="editor-head">
+          <h2 id="editor-title" data-editor-title>
+            Edit drink
+          </h2>
+          <button class="text-action" type="button" data-cancel>
+            Close
+          </button>
+        </div>
+        <div
+          class="editor-summary"
+          role="alert"
+          tabindex="-1"
+          data-summary
+          hidden
+        ></div>
+
+        <fieldset>
+          <legend>Basics</legend>
+          <div class="editor-grid">
+            <label class="field is-wide">
+              <span>Name *</span>
+              <input name="name" type="text" required />
+              <small class="field-error" data-error="name" hidden></small>
+            </label>
+            <label class="field">
+              <span>Slug *</span>
+              <input
+                name="slug"
+                type="text"
+                required
+                pattern="[a-z0-9]+(-[a-z0-9]+)*"
+                aria-describedby="slug-hint"
+              />
+              <small class="field-hint" id="slug-hint">
+                Used in the page address. Changing it changes the URL.
+              </small>
+              <small class="field-error" data-error="slug" hidden></small>
+            </label>
+            <label class="field">
+              <span>Category *</span>
+              <select name="category" required>
+                {categoryOptions.map((category) => (
+                  <option value={category.id}>{category.label}</option>
+                ))}
+              </select>
+              <small class="field-error" data-error="category" hidden></small>
+            </label>
+            <label class="field">
+              <span>Producer</span>
+              <select name="producer" data-producers></select>
+              <small class="field-error" data-error="producer" hidden></small>
+            </label>
+            <label class="field">
+              <span>Status</span>
+              <select name="status">
+                <option value="active">Active — shown on the site</option>
+                <option value="hidden">Hidden — kept here only</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Internal price (EUR)</span>
+              <input
+                name="price"
+                type="number"
+                min="0"
+                step="0.01"
+                inputmode="decimal"
+                aria-describedby="price-hint"
+              />
+              <small class="field-hint" id="price-hint">
+                Never shown on the public site. The decks have no prices.
+              </small>
+              <small class="field-error" data-error="price" hidden></small>
+            </label>
+            <label class="check">
+              <input name="featured" type="checkbox" />
+              <span>Featured on the homepage (first six are shown)</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Image</legend>
+          <div class="editor-image">
+            <span class="editor-preview">
+              <img alt="" data-preview hidden />
+            </span>
+            <div class="editor-image-fields">
+              <label class="field">
+                <span>Bottle image *</span>
+                <select name="image" data-image-select></select>
+                <small class="field-error" data-error="image" hidden></small>
+              </label>
+              <label class="field">
+                <span>Upload a new image</span>
+                <input type="file" accept=".jpg,.jpeg,.png,.webp" data-upload />
+                <small class="field-hint">
+                  JPG, PNG or WebP up to 5 MB. A bottle on a white background
+                  suits the site best.
+                </small>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Description</legend>
+          <p class="field-hint">
+            Lithuanian first, English second. Empty optional fields are simply
+            not shown.
+          </p>
+          {pairs.map((pair) => (
+            <div class="pair" data-pair={pair.key}>
+              <p class="pair-label">
+                {pair.label}
+                {pair.required && ' *'}
+              </p>
+              {pair.hint && <small class="field-hint">{pair.hint}</small>}
+              <div class="pair-fields">
+                {(['lt', 'en'] as const).map((lang) => (
+                  <label class="field">
+                    <span>{lang.toUpperCase()}</span>
+                    {pair.long ? (
+                      <textarea
+                        name={`${pair.key}.${lang}`}
+                        rows="4"
+                        lang={lang}
+                      />
+                    ) : (
+                      <input
+                        name={`${pair.key}.${lang}`}
+                        type="text"
+                        lang={lang}
+                      />
+                    )}
+                  </label>
+                ))}
+              </div>
+              <small class="field-error" data-error={pair.key} hidden />
+            </div>
+          ))}
+        </fieldset>
+
+        <fieldset>
+          <legend>Formats *</legend>
+          <p class="field-hint">
+            Each bottle size or pack. Leave the image empty to use the main
+            bottle image.
+          </p>
+          <div data-formats></div>
+          <small class="field-error" data-error="formats" hidden></small>
+          <button class="btn btn-secondary" type="button" data-add-format>
+            Add format
+          </button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Awards and ratings</legend>
+          <div data-awards></div>
+          <small class="field-error" data-error="awards" hidden></small>
+          <button class="btn btn-secondary" type="button" data-add-award>
+            Add award
+          </button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tags</legend>
+          <div class="checks">
+            {tagOptions.map((tag) => (
+              <label class="check">
+                <input type="checkbox" name="tags" value={tag.id} />
+                <span>{tag.label}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        <div class="editor-actions">
+          <button class="btn" type="submit">
+            Save drink
+          </button>
+          <button class="btn btn-secondary" type="button" data-cancel>
+            Cancel
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <template data-format-row>
+      <div class="row format-row">
+        <label class="field">
+          <span>Label LT</span>
+          <input data-k="label.lt" type="text" />
+        </label>
+        <label class="field">
+          <span>Label EN</span>
+          <input data-k="label.en" type="text" />
+        </label>
+        <label class="field">
+          <span>Volume (l)</span>
+          <input
+            data-k="volume"
+            type="number"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+          />
+        </label>
+        <label class="field">
+          <span>ABV (%)</span>
+          <input
+            data-k="abv"
+            type="number"
+            min="0"
+            max="100"
+            step="0.1"
+            inputmode="decimal"
+          />
+        </label>
+        <label class="field">
+          <span>Image</span>
+          <select data-k="image"></select>
+        </label>
+        <button class="text-action row-remove" type="button" data-remove>
+          Remove
+        </button>
+        <small class="field-error row-error" hidden></small>
+      </div>
+    </template>
+
+    <template data-award-row>
+      <div class="row award-row">
+        <label class="field">
+          <span>LT</span>
+          <input data-k="lt" type="text" />
+        </label>
+        <label class="field">
+          <span>EN</span>
+          <input data-k="en" type="text" />
+        </label>
+        <button class="text-action row-remove" type="button" data-remove>
+          Remove
+        </button>
+      </div>
+    </template>
+
+    <script>
+      import {
+        categoryIds,
+        slugify,
+        validateDrink,
+        type CategoryId,
+        type Drink,
+        type DrinkData,
+        type DrinkErrors,
+        type TagId,
+      } from '../data/schema';
+      import { categoryLabels } from '../data/labels';
+
+      type ImageRef = { file: string; url: string };
+      type ApiError = { error: string; details?: string[] };
+
+      const state = {
+        data: { producers: [], drinks: [] } as DrinkData,
+        version: '',
+        images: [] as ImageRef[],
+        editing: null as string | null, // slug being edited, null for a new drink
+      };
+
+      const $ = <T extends Element>(
+        selector: string,
+        root: ParentNode = document,
+      ) => root.querySelector(selector) as T;
+      const list = $<HTMLElement>('[data-list]');
+      const statusLine = $<HTMLElement>('[data-status]');
+      const dialog = $<HTMLDialogElement>('[data-editor]');
+      const form = $<HTMLFormElement>('[data-form]');
+      const summary = $<HTMLElement>('[data-summary]');
+      const search = $<HTMLInputElement>('[data-search]');
+      const filterCategory = $<HTMLSelectElement>('[data-filter-category]');
+      const filterStatus = $<HTMLSelectElement>('[data-filter-status]');
+      const imageSelect = $<HTMLSelectElement>('[data-image-select]');
+      const preview = $<HTMLImageElement>('[data-preview]');
+      const formatsBox = $<HTMLElement>('[data-formats]');
+      const awardsBox = $<HTMLElement>('[data-awards]');
+      const categoryLabel = Object.fromEntries(
+        categoryLabels.map((c) => [c.id, c.label.en]),
+      ) as Record<string, string>;
+
+      function announce(message: string) {
+        statusLine.textContent = message;
+      }
+
+      // Saving drinks.json makes the dev server reload every open page, this one included.
+      // Filters, scroll position and the last confirmation survive that reload here.
+      const memory = {
+        get(key: string) {
+          try {
+            return sessionStorage.getItem(`milesima-admin:${key}`);
+          } catch {
+            return null;
+          }
+        },
+        set(key: string, value: string | null) {
+          try {
+            if (value === null)
+              sessionStorage.removeItem(`milesima-admin:${key}`);
+            else sessionStorage.setItem(`milesima-admin:${key}`, value);
+          } catch {
+            // Storage can be unavailable; the page still works without it.
+          }
+        },
+      };
+
+      function readFlash(): string | null {
+        try {
+          const flash = JSON.parse(memory.get('flash') ?? 'null') as {
+            message: string;
+            at: number;
+          } | null;
+          return flash && Date.now() - flash.at < 10_000 ? flash.message : null;
+        } catch {
+          return null;
+        }
+      }
+
+      async function api<T>(path: string, init: RequestInit = {}): Promise<T> {
+        const response = await fetch(`/admin/api/${path}`, {
+          ...init,
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Milesima-Admin': '1',
+            ...init.headers,
+          },
+        });
+        const body = (await response.json().catch(() => ({
+          error: 'The server sent an unreadable reply.',
+        }))) as T & ApiError;
+        if (!response.ok) {
+          const error = new Error(body.error) as Error & { details?: string[] };
+          error.details = body.details;
+          throw error;
+        }
+        return body;
+      }
+
+      type Props<K extends keyof HTMLElementTagNameMap> = Partial<
+        Omit<HTMLElementTagNameMap[K], 'dataset'>
+      > & {
+        dataset?: Record<string, string>;
+      };
+
+      function el<K extends keyof HTMLElementTagNameMap>(
+        tag: K,
+        props: Props<K> = {},
+        ...children: (Node | string)[]
+      ) {
+        const { dataset, ...rest } = props;
+        const node = Object.assign(document.createElement(tag), rest);
+        if (dataset) Object.assign(node.dataset, dataset);
+        node.append(...children);
+        return node;
+      }
+
+      const imageUrl = (file: string) =>
+        state.images.find((image) => image.file === file)?.url ?? '';
+      const producerName = (id: string) =>
+        state.data.producers.find((p) => p.id === id)?.name ?? '';
+
+      // List
+
+      function render() {
+        const query = search.value.trim().toLowerCase();
+        const category = filterCategory.value;
+        const status = filterStatus.value;
+        const shown = state.data.drinks.filter(
+          (drink) =>
+            (!category || drink.category === category) &&
+            (!status || drink.status === status) &&
+            (!query ||
+              `${drink.name} ${producerName(drink.producer)}`
+                .toLowerCase()
+                .includes(query)),
+        );
+        list.replaceChildren();
+        if (shown.length === 0) {
+          list.append(
+            el('p', {
+              className: 'admin-empty',
+              textContent: 'No drinks match these filters.',
+            }),
+          );
+          return;
+        }
+        for (const id of categoryIds) {
+          const drinks = shown.filter((drink) => drink.category === id);
+          if (drinks.length === 0) continue;
+          const table = el('table', { className: 'admin-table' });
+          table.append(
+            el('caption', {
+              className: 'visually-hidden',
+              textContent: `${categoryLabel[id] ?? id} drinks`,
+            }),
+            el(
+              'thead',
+              {},
+              el(
+                'tr',
+                {},
+                ...[
+                  'Image',
+                  'Drink',
+                  'Formats',
+                  'Featured',
+                  'Status',
+                  'Actions',
+                ].map((label) =>
+                  el('th', { scope: 'col', textContent: label }),
+                ),
+              ),
+            ),
+          );
+          const body = el('tbody');
+          for (const drink of drinks) body.append(row(drink));
+          table.append(body);
+          list.append(
+            el(
+              'section',
+              { className: 'admin-group' },
+              el('h2', {
+                className: 'admin-group-title',
+                textContent: `${categoryLabel[id] ?? id} · ${drinks.length}`,
+              }),
+              table,
+            ),
+          );
+        }
+      }
+
+      function row(drink: Drink) {
+        const thumb = el('span', { className: 'admin-thumb' });
+        const url = imageUrl(drink.image);
+        if (url)
+          thumb.append(el('img', { src: url, alt: '', loading: 'lazy' }));
+        const formats = drink.formats
+          .map((f) => `${f.volume} l · ${f.abv}% — ${f.label.en}`)
+          .join('\n');
+        const action = (label: string, onclick: () => void, extra = '') =>
+          el('button', {
+            type: 'button',
+            className: `text-action ${extra}`.trim(),
+            textContent: label,
+            ariaLabel: `${label} ${drink.name}`,
+            onclick,
+          });
+        const actions = el(
+          'div',
+          { className: 'admin-actions' },
+          action('Edit', () => openEditor(drink.slug)),
+          action(drink.status === 'active' ? 'Hide' : 'Show', () =>
+            toggleHidden(drink.slug),
+          ),
+          action('Delete', () => remove(drink.slug), 'is-danger'),
+        );
+        return el(
+          'tr',
+          { className: drink.status === 'hidden' ? 'is-hidden' : '' },
+          el('td', { className: 'cell-thumb' }, thumb),
+          el(
+            'td',
+            { className: 'cell-name' },
+            el('strong', { textContent: drink.name }),
+            el('span', {
+              textContent: [producerName(drink.producer), drink.country.en]
+                .filter(Boolean)
+                .join(' · '),
+            }),
+          ),
+          el('td', {
+            className: 'cell-formats',
+            textContent: formats,
+            dataset: { label: 'Formats' },
+          }),
+          el('td', {
+            textContent: drink.featured ? 'Yes' : '—',
+            dataset: { label: 'Featured' },
+          }),
+          el('td', {
+            textContent: drink.status === 'active' ? 'Active' : 'Hidden',
+            dataset: { label: 'Status' },
+          }),
+          el('td', { className: 'cell-actions' }, actions),
+        );
+      }
+
+      // Saving
+
+      async function persist(next: DrinkData, done: string) {
+        announce('Saving…');
+        memory.set('flash', JSON.stringify({ message: done, at: Date.now() }));
+        memory.set('scroll', String(window.scrollY));
+        try {
+          const result = await api<{ version: string }>('data', {
+            method: 'PUT',
+            body: JSON.stringify({ data: next, version: state.version }),
+          });
+          state.data = next;
+          state.version = result.version;
+          render();
+          announce(done);
+          return true;
+        } catch (error) {
+          memory.set('flash', null);
+          const { message, details } = error as Error & { details?: string[] };
+          announce(
+            `Not saved. ${message}${details?.length ? ` ${details.slice(0, 5).join(' ')}` : ''}`,
+          );
+          return false;
+        }
+      }
+
+      const cloneData = (): DrinkData => structuredClone(state.data);
+
+      async function toggleHidden(slug: string) {
+        const next = cloneData();
+        const drink = next.drinks.find((d) => d.slug === slug);
+        if (!drink) return;
+        drink.status = drink.status === 'active' ? 'hidden' : 'active';
+        await persist(
+          next,
+          `${drink.name} is now ${drink.status === 'active' ? 'shown on' : 'hidden from'} the site.`,
+        );
+      }
+
+      async function remove(slug: string) {
+        const drink = state.data.drinks.find((d) => d.slug === slug);
+        if (!drink) return;
+        const sure = window.confirm(
+          `Delete "${drink.name}" from drinks.json? This removes it from the data file. To keep it but take it off the site, use Hide instead.`,
+        );
+        if (!sure) return;
+        const next = cloneData();
+        next.drinks = next.drinks.filter((d) => d.slug !== slug);
+        await persist(next, `${drink.name} was deleted.`);
+      }
+
+      // Editor
+
+      function blankDrink(): Drink {
+        const empty = () => ({ lt: '', en: '' });
+        return {
+          slug: '',
+          name: '',
+          category: (filterCategory.value || 'wine') as CategoryId,
+          producer: '',
+          status: 'active',
+          featured: false,
+          country: empty(),
+          region: empty(),
+          origin: empty(),
+          style: empty(),
+          composition: empty(),
+          colour: empty(),
+          aroma: empty(),
+          palate: empty(),
+          notes: empty(),
+          story: empty(),
+          awards: [],
+          tags: [],
+          formats: [
+            {
+              label: { lt: 'Butelis', en: 'Bottle' },
+              volume: 0.75,
+              abv: 0,
+              image: '',
+            },
+          ],
+          image: '',
+          price: null,
+        };
+      }
+
+      function fillImageOptions(
+        select: HTMLSelectElement,
+        value: string,
+        emptyLabel: string,
+      ) {
+        select.replaceChildren(
+          el('option', { value: '', textContent: emptyLabel }),
+          ...state.images.map((image) =>
+            el('option', { value: image.file, textContent: image.file }),
+          ),
+        );
+        select.value = value;
+      }
+
+      function updatePreview() {
+        const url = imageUrl(imageSelect.value);
+        preview.hidden = !url;
+        if (url) preview.src = url;
+      }
+
+      function addFormatRow(
+        format = { label: { lt: '', en: '' }, volume: 0.7, abv: 40, image: '' },
+      ) {
+        const node = (
+          $<HTMLTemplateElement>('[data-format-row]').content.cloneNode(
+            true,
+          ) as DocumentFragment
+        ).firstElementChild as HTMLElement;
+        $<HTMLInputElement>('[data-k="label.lt"]', node).value =
+          format.label.lt;
+        $<HTMLInputElement>('[data-k="label.en"]', node).value =
+          format.label.en;
+        $<HTMLInputElement>('[data-k="volume"]', node).value = String(
+          format.volume,
+        );
+        $<HTMLInputElement>('[data-k="abv"]', node).value = String(format.abv);
+        fillImageOptions(
+          $<HTMLSelectElement>('[data-k="image"]', node),
+          format.image,
+          'Main image',
+        );
+        $<HTMLButtonElement>('[data-remove]', node).onclick = () =>
+          node.remove();
+        formatsBox.append(node);
+      }
+
+      function addAwardRow(award = { lt: '', en: '' }) {
+        const node = (
+          $<HTMLTemplateElement>('[data-award-row]').content.cloneNode(
+            true,
+          ) as DocumentFragment
+        ).firstElementChild as HTMLElement;
+        $<HTMLInputElement>('[data-k="lt"]', node).value = award.lt;
+        $<HTMLInputElement>('[data-k="en"]', node).value = award.en;
+        $<HTMLButtonElement>('[data-remove]', node).onclick = () =>
+          node.remove();
+        awardsBox.append(node);
+      }
+
+      const field = (name: string) =>
+        form.elements.namedItem(name) as
+          HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+
+      function openEditor(slug: string | null) {
+        const drink = slug
+          ? state.data.drinks.find((d) => d.slug === slug)
+          : blankDrink();
+        if (!drink) return;
+        state.editing = slug;
+        form.reset();
+        clearErrors();
+        $<HTMLElement>('[data-editor-title]').textContent = slug
+          ? `Edit ${drink.name}`
+          : 'Add drink';
+        const producerSelect = $<HTMLSelectElement>('[data-producers]');
+        producerSelect.replaceChildren(
+          el('option', { value: '', textContent: 'Not stated' }),
+          ...state.data.producers.map((p) =>
+            el('option', { value: p.id, textContent: p.name }),
+          ),
+        );
+        field('name').value = drink.name;
+        field('slug').value = drink.slug;
+        field('slug').dataset.touched = slug ? 'true' : '';
+        field('category').value = drink.category;
+        field('producer').value = drink.producer;
+        field('status').value = drink.status;
+        field('price').value = drink.price === null ? '' : String(drink.price);
+        (field('featured') as HTMLInputElement).checked = drink.featured;
+        for (const key of [
+          'country',
+          'region',
+          'origin',
+          'style',
+          'composition',
+          'colour',
+          'aroma',
+          'palate',
+          'notes',
+          'story',
+        ] as const) {
+          field(`${key}.lt`).value = drink[key].lt;
+          field(`${key}.en`).value = drink[key].en;
+        }
+        for (const box of form.querySelectorAll<HTMLInputElement>(
+          'input[name="tags"]',
+        ))
+          box.checked = drink.tags.includes(box.value as TagId);
+        fillImageOptions(imageSelect, drink.image, 'Choose an image');
+        updatePreview();
+        formatsBox.replaceChildren();
+        drink.formats.forEach((format) => addFormatRow(format));
+        awardsBox.replaceChildren();
+        drink.awards.forEach((award) => addAwardRow(award));
+        dialog.showModal();
+        field('name').focus();
+      }
+
+      function readForm(): Drink {
+        const value = (name: string) => field(name).value.trim();
+        const pair = (key: string) => ({
+          lt: value(`${key}.lt`),
+          en: value(`${key}.en`),
+        });
+        const price = value('price');
+        return {
+          slug: value('slug'),
+          name: value('name'),
+          category: value('category') as CategoryId,
+          producer: value('producer'),
+          status: value('status') as Drink['status'],
+          featured: (field('featured') as HTMLInputElement).checked,
+          country: pair('country'),
+          region: pair('region'),
+          origin: pair('origin'),
+          style: pair('style'),
+          composition: pair('composition'),
+          colour: pair('colour'),
+          aroma: pair('aroma'),
+          palate: pair('palate'),
+          notes: pair('notes'),
+          story: pair('story'),
+          awards: [...awardsBox.children].map((node) => ({
+            lt: $<HTMLInputElement>('[data-k="lt"]', node).value.trim(),
+            en: $<HTMLInputElement>('[data-k="en"]', node).value.trim(),
+          })),
+          tags: [
+            ...form.querySelectorAll<HTMLInputElement>(
+              'input[name="tags"]:checked',
+            ),
+          ].map((box) => box.value as TagId),
+          formats: [...formatsBox.children].map((node) => ({
+            label: {
+              lt: $<HTMLInputElement>('[data-k="label.lt"]', node).value.trim(),
+              en: $<HTMLInputElement>('[data-k="label.en"]', node).value.trim(),
+            },
+            volume: Number(
+              $<HTMLInputElement>('[data-k="volume"]', node).value,
+            ),
+            abv: Number($<HTMLInputElement>('[data-k="abv"]', node).value),
+            image: $<HTMLSelectElement>('[data-k="image"]', node).value,
+          })),
+          image: value('image'),
+          price: price === '' ? null : Number(price),
+        };
+      }
+
+      function clearErrors() {
+        summary.hidden = true;
+        summary.replaceChildren();
+        for (const slot of form.querySelectorAll<HTMLElement>('.field-error')) {
+          slot.hidden = true;
+          slot.textContent = '';
+        }
+        for (const input of form.querySelectorAll('[aria-invalid]'))
+          input.removeAttribute('aria-invalid');
+      }
+
+      function showErrors(errors: DrinkErrors) {
+        const entries = Object.entries(errors);
+        for (const [key, message] of entries) {
+          const formatMatch = /^formats\.(\d+)\./.exec(key);
+          const slot = formatMatch
+            ? (formatsBox.children[
+                Number(formatMatch[1])
+              ]?.querySelector<HTMLElement>('.row-error') ?? null)
+            : form.querySelector<HTMLElement>(`[data-error="${key}"]`);
+          if (slot) {
+            slot.textContent = slot.textContent
+              ? `${slot.textContent} ${message}`
+              : (message ?? '');
+            slot.hidden = false;
+          }
+          const input = formatMatch
+            ? null
+            : (form.querySelector(
+                `[name="${key}"], [name="${key}.lt"]`,
+              ) as HTMLElement | null);
+          input?.setAttribute('aria-invalid', 'true');
+        }
+        summary.append(
+          el('p', {
+            textContent: `Please fix ${entries.length} ${entries.length === 1 ? 'problem' : 'problems'} before saving.`,
+          }),
+          el(
+            'ul',
+            {},
+            ...entries.map(([key, message]) =>
+              el('li', { textContent: `${key}: ${message}` }),
+            ),
+          ),
+        );
+        summary.hidden = false;
+        summary.focus();
+      }
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        clearErrors();
+        const drink = readForm();
+        const errors = validateDrink(
+          drink,
+          state.data,
+          state.editing ?? undefined,
+        );
+        if (Object.keys(errors).length) return showErrors(errors);
+        const next = cloneData();
+        if (state.editing)
+          next.drinks = next.drinks.map((d) =>
+            d.slug === state.editing ? drink : d,
+          );
+        else next.drinks.push(drink);
+        if (await persist(next, `${drink.name} saved.`)) dialog.close();
+        else showErrors({ save: statusLine.textContent ?? 'Not saved.' });
+      });
+
+      field('name').addEventListener('input', () => {
+        const slug = field('slug');
+        if (!slug.dataset.touched) slug.value = slugify(field('name').value);
+      });
+      field('slug').addEventListener(
+        'input',
+        () => (field('slug').dataset.touched = 'true'),
+      );
+      imageSelect.addEventListener('change', updatePreview);
+
+      $<HTMLInputElement>('[data-upload]').addEventListener(
+        'change',
+        async (event) => {
+          const input = event.currentTarget as HTMLInputElement;
+          const file = input.files?.[0];
+          if (!file) return;
+          const content = await new Promise<string>((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(String(reader.result));
+            reader.onerror = () => reject(reader.error);
+            reader.readAsDataURL(file);
+          });
+          try {
+            const image = await api<ImageRef>('images', {
+              method: 'POST',
+              body: JSON.stringify({ name: file.name, content }),
+            });
+            state.images = [...state.images, image].sort((a, b) =>
+              a.file.localeCompare(b.file),
+            );
+            fillImageOptions(imageSelect, image.file, 'Choose an image');
+            for (const select of formatsBox.querySelectorAll<HTMLSelectElement>(
+              '[data-k="image"]',
+            ))
+              fillImageOptions(select, select.value, 'Main image');
+            updatePreview();
+            announce(`Uploaded ${image.file}.`);
+          } catch (error) {
+            showErrors({ image: (error as Error).message });
+          } finally {
+            input.value = '';
+          }
+        },
+      );
+
+      $<HTMLButtonElement>('[data-add-format]').addEventListener('click', () =>
+        addFormatRow(),
+      );
+      $<HTMLButtonElement>('[data-add-award]').addEventListener('click', () =>
+        addAwardRow(),
+      );
+      $<HTMLButtonElement>('[data-add]').addEventListener('click', () =>
+        openEditor(null),
+      );
+      for (const button of document.querySelectorAll<HTMLButtonElement>(
+        '[data-cancel]',
+      ))
+        button.addEventListener('click', () => dialog.close());
+      const controls = [search, filterCategory, filterStatus];
+      try {
+        const saved = JSON.parse(memory.get('filters') ?? '[]') as string[];
+        controls.forEach(
+          (control, index) => (control.value = saved[index] ?? ''),
+        );
+      } catch {
+        // Ignore unreadable saved filters.
+      }
+      for (const control of controls) {
+        control.addEventListener('input', () => {
+          memory.set('filters', JSON.stringify(controls.map((c) => c.value)));
+          render();
+        });
+      }
+
+      api<{ data: DrinkData; version: string; images: ImageRef[] }>('data')
+        .then((result) => {
+          Object.assign(state, result);
+          render();
+          const flash = readFlash();
+          const scroll = Number(memory.get('scroll'));
+          memory.set('flash', null);
+          memory.set('scroll', null);
+          announce(flash ?? `${state.data.drinks.length} drinks loaded.`);
+          if (flash && scroll)
+            window.scrollTo({ top: scroll, behavior: 'instant' });
+        })
+        .catch((error: Error) =>
+          announce(`Could not load drinks. ${error.message}`),
+        );
+    </script>
+
+    <style is:global>
+      .admin {
+        background: var(--ivory);
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+
+      .admin-header {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .admin-header-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: space-between;
+        gap: 16px 32px;
+        padding: 32px 0 24px;
+      }
+
+      .admin-title {
+        font-size: var(--h2);
+        line-height: 1;
+      }
+
+      .admin-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .admin button.text-action {
+        padding: 0;
+        border: 0;
+        background: none;
+        cursor: pointer;
+      }
+
+      .admin-main {
+        padding: 32px 0 96px;
+      }
+
+      .admin-note {
+        max-width: 60rem;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .admin code {
+        font-size: 0.92em;
+        color: var(--charcoal);
+      }
+
+      .admin-tools {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+        gap: 16px;
+        margin: 28px 0 12px;
+        max-width: 60rem;
+      }
+
+      .admin-status {
+        min-height: 1.6em;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .admin-empty {
+        margin-top: 32px;
+        color: var(--muted);
+      }
+
+      .admin-group {
+        margin-top: 40px;
+      }
+
+      .admin-group-title {
+        margin-bottom: 12px;
+        font-size: var(--h3);
+        line-height: 1.15;
+      }
+
+      .admin-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
+      .admin-table th {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--charcoal);
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      .admin-table td {
+        padding: 12px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: middle;
+      }
+
+      .admin-table tr.is-hidden td:not(.cell-actions) {
+        opacity: 0.55;
+      }
+
+      .admin-thumb {
+        position: relative;
+        display: block;
+        width: 48px;
+        height: 64px;
+        background: var(--sand);
+        isolation: isolate;
+      }
+
+      .admin-thumb img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 4px;
+        mix-blend-mode: multiply;
+      }
+
+      .cell-name strong {
+        display: block;
+        font-family: var(--serif);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      .cell-name span,
+      .cell-formats {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .cell-formats {
+        white-space: pre-line;
+      }
+
+      .admin-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 20px;
+      }
+
+      .admin .text-action.is-danger {
+        color: var(--wine);
+      }
+
+      .editor {
+        width: min(960px, calc(100% - 32px));
+        max-height: calc(100vh - 32px);
+        padding: 0;
+        border: 1px solid var(--line);
+        background: var(--ivory);
+        color: var(--charcoal);
+      }
+
+      .editor::backdrop {
+        background: rgba(26, 26, 26, 0.5);
+      }
+
+      .editor-form {
+        display: grid;
+        gap: 28px;
+        padding: 28px clamp(20px, 4vw, 40px) 32px;
+      }
+
+      .editor-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .editor-head h2 {
+        font-size: var(--h3);
+        line-height: 1.15;
+        max-width: none;
+      }
+
+      .editor-summary {
+        padding: 16px;
+        border: 1px solid var(--wine);
+        color: var(--wine);
+        font-size: 14px;
+      }
+
+      .editor-summary ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+
+      .editor fieldset {
+        display: grid;
+        gap: 16px;
+        margin: 0;
+        padding: 24px 0 0;
+        border: 0;
+        border-top: 1px solid var(--line);
+        min-width: 0;
+      }
+
+      .editor legend {
+        padding: 0 12px 0 0;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .editor-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 24px;
+      }
+
+      .editor-grid .is-wide {
+        grid-column: 1 / -1;
+      }
+
+      .field-hint {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.4;
+      }
+
+      .admin .field input[aria-invalid='true'],
+      .admin .field select[aria-invalid='true'],
+      .admin .field textarea[aria-invalid='true'] {
+        border-color: var(--wine);
+      }
+
+      .check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 44px;
+        font-size: 15px;
+      }
+
+      .check input {
+        width: 18px;
+        height: 18px;
+        accent-color: var(--charcoal);
+      }
+
+      .checks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 28px;
+      }
+
+      .editor-image {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 1fr);
+        gap: 24px;
+        align-items: start;
+      }
+
+      .editor-preview {
+        position: relative;
+        display: block;
+        aspect-ratio: 3 / 4;
+        background: var(--sand);
+        isolation: isolate;
+      }
+
+      .editor-preview img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 8px;
+        mix-blend-mode: multiply;
+      }
+
+      .editor-image-fields {
+        display: grid;
+        gap: 16px;
+      }
+
+      .editor-image-fields input[type='file'] {
+        height: auto;
+        padding: 12px 14px;
+      }
+
+      .pair {
+        display: grid;
+        gap: 6px;
+      }
+
+      .pair-label {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .pair-fields {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .row {
+        display: grid;
+        gap: 12px 16px;
+        align-items: end;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .format-row {
+        grid-template-columns: 1fr 1fr 0.7fr 0.7fr 1.3fr auto;
+      }
+
+      .award-row {
+        grid-template-columns: 1fr 1fr auto;
+      }
+
+      .row-remove {
+        min-height: 48px;
+      }
+
+      .row-error {
+        grid-column: 1 / -1;
+      }
+
+      .editor-actions {
+        display: flex;
+        gap: 16px;
+      }
+
+      .editor .btn-secondary {
+        justify-self: start;
+      }
+
+      @media (max-width: 799px) {
+        .admin-tools,
+        .editor-grid,
+        .pair-fields,
+        .editor-image,
+        .format-row,
+        .award-row {
+          grid-template-columns: 1fr;
+        }
+
+        .editor-preview {
+          width: 120px;
+        }
+
+        .admin-table thead {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+          clip-path: inset(50%);
+        }
+
+        .admin-table,
+        .admin-table tbody,
+        .admin-table tr,
+        .admin-table td {
+          display: block;
+        }
+
+        .admin-table tr {
+          display: grid;
+          grid-template-columns: 56px minmax(0, 1fr);
+          gap: 4px 16px;
+          padding: 16px 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .admin-table td {
+          padding: 0;
+          border: 0;
+        }
+
+        .admin-table .cell-thumb {
+          grid-row: span 5;
+        }
+
+        .admin-table td[data-label]::before {
+          content: attr(data-label) ': ';
+          color: var(--charcoal);
+          font-size: 12px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+        }
+      }
+    </style>
+  </body>
+</html>

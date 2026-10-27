@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+import vineyard from '../assets/scenes/hero-vineyard-dusk.jpg';
+import { ui, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = ui[locale];
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <Image
+    class="hero-photo"
+    src={vineyard}
+    alt=""
+    widths={[960, 1600, 2000]}
+    sizes="100vw"
+    format="webp"
+    quality={75}
+    loading="eager"
+  />
+  <div class="hero-content">
+    <h1 id="hero-title">{t.heroTitle}</h1>
+    <div class="hairline" aria-hidden="true"></div>
+    <p class="lede">{t.heroLede}</p>
+    <a class="btn btn-inverse" href="#portfolio">
+      {t.heroCta} →
+    </a>
+  </div>
+  <ul class="hero-side" aria-hidden="true">
+    {t.heroSide.map((label) => (
+      <li>{label}</li>
+    ))}
+  </ul>
+</section>

@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets';
+import { drinkImage } from '../data/catalog';
+
+interface Props {
+  file: string;
+  alt: string;
+  fallback: string;
+  widths: number[];
+  sizes: string;
+  loading?: 'eager' | 'lazy';
+}
+
+const { file, alt, fallback, widths, sizes, loading = 'lazy' } = Astro.props;
+const image = drinkImage(file);
+---
+
+{image ? (
+  <Image
+    src={image}
+    alt={alt}
+    widths={widths}
+    sizes={sizes}
+    format="webp"
+    quality={80}
+    loading={loading}
+  />
+) : (
+  <span class="drink-fallback" role="img" aria-label={alt}>
+    <span aria-hidden="true">{fallback}</span>
+  </span>
+)}

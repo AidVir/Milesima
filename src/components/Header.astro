@@ -1,0 +1,91 @@
+---
+import { Image } from 'astro:assets';
+import logoName from '../assets/brand/logo-name.png';
+import { localePath, navHref, stripBase, ui, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = ui[locale];
+const path = stripBase(Astro.url.pathname);
+
+function current(key: (typeof t.nav)[number]['key']): 'page' | undefined {
+  if (key === 'contact' && path.endsWith('/contact')) return 'page';
+  if (key === 'producers' && path.includes('/producers')) return 'page';
+  if (key === 'portfolio' && path.includes('/portfolio')) return 'page';
+  return undefined;
+}
+---
+
+<header class="site-header" data-header>
+  <div class="header-inner wrap">
+    <a class="wordmark" href={localePath(locale, '/')}>
+      <Image src={logoName} alt="MILESIMA" widths={[280, 560]} sizes="180px" />
+    </a>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      data-nav-toggle
+    >
+      <span class="nav-open-label">{t.menu}</span>
+      <span class="nav-close-label">{t.close}</span>
+    </button>
+    <nav id="site-nav" class="nav" data-nav aria-label={t.menu}>
+      <div class="nav-links">
+        {t.nav.map((item) => (
+          <a href={navHref(locale, item.key)} aria-current={current(item.key)}>
+            {item.label}
+          </a>
+        ))}
+      </div>
+      <div class="lang" aria-label={t.language}>
+        <a
+          href={localePath('lt', path.replace(/^\/en(?=\/|$)/, '') || '/')}
+          hreflang="lt"
+          aria-current={locale === 'lt' ? 'page' : undefined}
+        >
+          LT
+        </a>
+        <a
+          href={localePath('en', path.replace(/^\/en(?=\/|$)/, '') || '/')}
+          hreflang="en"
+          aria-current={locale === 'en' ? 'page' : undefined}
+        >
+          EN
+        </a>
+      </div>
+      <a class="btn btn-secondary header-trade" href={navHref(locale, 'trade')}>
+        {t.tradeLogin} →
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector('[data-header]');
+  const toggle = document.querySelector('[data-nav-toggle]');
+  const nav = document.querySelector('[data-nav]');
+
+  if (header && toggle && nav) {
+    const close = () => {
+      header.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+      const open = header.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    nav
+      .querySelectorAll('a')
+      .forEach((link) => link.addEventListener('click', close));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') close();
+    });
+  }
+</script>

@@ -1,0 +1,3 @@
+# Client preview: keep it out of search engines. Switch to "Allow: /" for launch.
+User-agent: *
+Disallow: /

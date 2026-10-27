@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import olives from '../assets/scenes/trade-olives.jpg';
+import { localePath, ui, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = ui[locale];
+---
+
+<section class="trade" id="trade" aria-labelledby="trade-title">
+  <Image
+    class="trade-photo"
+    src={olives}
+    alt=""
+    widths={[960, 1600]}
+    sizes="100vw"
+    format="webp"
+    quality={75}
+    loading="lazy"
+  />
+  <div class="wrap trade-layout">
+    <p class="eyebrow trade-eyebrow">{t.tradeEyebrow}</p>
+    <h2 id="trade-title" class="trade-title">
+      {t.tradeTitle}
+    </h2>
+    <div class="trade-aside">
+      <p>{t.tradeText}</p>
+      <a class="btn btn-inverse" href={localePath(locale, '/contact')}>
+        {t.tradeCta} →
+      </a>
+    </div>
+  </div>
+</section>

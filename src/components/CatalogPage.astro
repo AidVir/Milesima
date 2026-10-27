@@ -1,0 +1,83 @@
+---
+import { categories, getByCategory, type CategoryId } from '../data/catalog';
+import { localePath, ui, type Locale } from '../i18n/ui';
+import Base from '../layouts/Base.astro';
+import EditorialHeading from './EditorialHeading.astro';
+import ProductCard from './ProductCard.astro';
+
+interface Props {
+  locale: Locale;
+  category?: CategoryId;
+}
+
+const { locale, category } = Astro.props;
+const t = ui[locale];
+const active = categories.find((item) => item.id === category);
+const title = active
+  ? `${active.label[locale]} — MILESIMA`
+  : `${t.selectionTitle} — MILESIMA`;
+const groups = (active ? [active] : categories).map((item) => ({
+  category: item,
+  drinks: getByCategory(item.id),
+}));
+---
+
+<Base
+  locale={locale}
+  path={category ? `/portfolio/${category}` : '/portfolio'}
+  title={title}
+  description={t.selectionIntro}
+>
+  <main id="main" class="section">
+    <div class="wrap">
+      <EditorialHeading
+        level="h1"
+        eyebrow={t.portfolioEyebrow}
+        title={active ? active.label[locale] : t.selectionTitle}
+        copy={t.selectionIntro}
+      />
+      <nav class="filters" aria-label={t.filters}>
+        <a
+          href={localePath(locale, '/portfolio')}
+          aria-current={category ? undefined : 'page'}
+        >
+          {t.all}
+        </a>
+        {categories.map((item) => (
+          <a
+            href={localePath(locale, `/portfolio/${item.id}`)}
+            aria-current={item.id === category ? 'page' : undefined}
+          >
+            {item.label[locale]}
+          </a>
+        ))}
+      </nav>
+      {groups.map(({ category: group, drinks }) => (
+        <section
+          class="catalog-group"
+          aria-labelledby={active ? undefined : `group-${group.id}`}
+        >
+          {!active && (
+            <h2 class="catalog-group-title" id={`group-${group.id}`}>
+              {group.label[locale]}
+            </h2>
+          )}
+          {drinks.length === 0 ? (
+            <p class="empty">{t.emptyCategory}</p>
+          ) : (
+            <div class="products is-catalog">
+              {drinks.map((product) => (
+                <ProductCard
+                  product={product}
+                  locale={locale}
+                  heading={active ? 'h2' : 'h3'}
+                  showProducerLine
+                />
+              ))}
+            </div>
+          )}
+        </section>
+      ))}
+    </div>
+  </main>
+</Base>

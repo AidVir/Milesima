@@ -1,0 +1,89 @@
+---
+import { ui, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const form = ui[locale].form;
+---
+
+<form class="form" data-enquiry novalidate>
+  <label class="field">
+    <span>{form.name}</span>
+    <input name="name" type="text" autocomplete="name" required />
+    <small class="field-error" data-error="name" hidden></small>
+  </label>
+  <label class="field">
+    <span>{form.company}</span>
+    <input name="company" type="text" autocomplete="organization" />
+  </label>
+  <label class="field">
+    <span>{form.email}</span>
+    <input name="email" type="email" autocomplete="email" required />
+    <small class="field-error" data-error="email" hidden></small>
+  </label>
+  <label class="field">
+    <span>{form.enquiry}</span>
+    <select name="enquiry" required>
+      <option value="">{form.select}</option>
+      {form.options.map((option) => (
+        <option value={option.value}>{option.label}</option>
+      ))}
+    </select>
+    <small class="field-error" data-error="enquiry" hidden></small>
+  </label>
+  <label class="field">
+    <span>{form.message}</span>
+    <textarea name="message" rows="6" required></textarea>
+    <small class="field-error" data-error="message" hidden></small>
+  </label>
+  <button class="btn" type="submit">
+    {form.submit} →
+  </button>
+</form>
+<div class="success" data-success hidden>
+  <h3>{form.successTitle}</h3>
+  <p>{form.successText}</p>
+</div>
+
+<script
+  define:vars={{ required: form.required, emailInvalid: form.emailInvalid }}
+>
+  const formEl = document.querySelector('[data-enquiry]');
+  const success = document.querySelector('[data-success]');
+  if (formEl instanceof HTMLFormElement && success) {
+    const show = (name, message) => {
+      const slot = formEl.querySelector(`[data-error="${name}"]`);
+      if (!(slot instanceof HTMLElement)) return;
+      slot.textContent = message;
+      slot.hidden = !message;
+    };
+
+    formEl.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(formEl);
+      const name = String(data.get('name') ?? '').trim();
+      const email = String(data.get('email') ?? '').trim();
+      const enquiry = String(data.get('enquiry') ?? '').trim();
+      const message = String(data.get('message') ?? '').trim();
+      let valid = true;
+
+      show('name', name ? '' : required);
+      show('enquiry', enquiry ? '' : required);
+      show('message', message ? '' : required);
+      if (!email) show('email', required);
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+        show('email', emailInvalid);
+      else show('email', '');
+
+      valid = Boolean(
+        name && enquiry && message && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email),
+      );
+      if (!valid) return;
+      formEl.hidden = true;
+      success.hidden = false;
+    });
+  }
+</script>

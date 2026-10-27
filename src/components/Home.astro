@@ -1,0 +1,66 @@
+---
+import { categories, getFeatured } from '../data/catalog';
+import { localePath, ui, type Locale } from '../i18n/ui';
+import Base from '../layouts/Base.astro';
+import CategoryCard from './CategoryCard.astro';
+import EditorialHeading from './EditorialHeading.astro';
+import Hero from './Hero.astro';
+import ImageBanner from './ImageBanner.astro';
+import ProductCard from './ProductCard.astro';
+import TradeCta from './TradeCta.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = ui[locale];
+const featured = getFeatured();
+---
+
+<Base locale={locale} path="/">
+  <main id="main">
+    <Hero locale={locale} />
+    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="wrap">
+        <EditorialHeading
+          eyebrow={t.portfolioEyebrow}
+          title={t.portfolioTitle}
+          copy={t.portfolioText}
+          actionHref={localePath(locale, '/portfolio')}
+          actionLabel={t.browsePortfolio}
+          titleId="portfolio-title"
+        />
+        <div class="categories" style={`--cols: ${categories.length}`}>
+          {categories.map((category) => (
+            <CategoryCard
+              category={category}
+              locale={locale}
+              href={localePath(locale, `/portfolio/${category.id}`)}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+    <ImageBanner locale={locale} />
+    <section class="section" id="featured" aria-labelledby="featured-title">
+      <div class="wrap">
+        <EditorialHeading
+          eyebrow={t.featuredEyebrow}
+          title={t.featuredTitle}
+          copy={t.featuredCopy}
+          actionHref={localePath(locale, '/portfolio')}
+          actionLabel={t.viewPortfolio}
+          titleId="featured-title"
+          align="center"
+        />
+        <div class="products" style={`--cols: ${featured.length}`}>
+          {featured.map((product) => (
+            <ProductCard product={product} locale={locale} />
+          ))}
+        </div>
+      </div>
+    </section>
+    <TradeCta locale={locale} />
+  </main>
+</Base>

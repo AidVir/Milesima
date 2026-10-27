@@ -1,0 +1,164 @@
+---
+import {
+  drinkAlt,
+  formatLine,
+  getBySlug,
+  getCategory,
+  getProducer,
+  placeLine,
+  tagLabels,
+} from '../data/catalog';
+import { localePath, ui, type Locale } from '../i18n/ui';
+import Base from '../layouts/Base.astro';
+import DrinkImage from './DrinkImage.astro';
+
+interface Props {
+  locale: Locale;
+  slug: string;
+}
+
+const { locale, slug } = Astro.props;
+const product = getBySlug(slug);
+if (!product) {
+  throw new Error(`Unknown product: ${slug}`);
+}
+const t = ui[locale];
+const d = t.detail;
+const category = getCategory(product.category);
+const producer = getProducer(product.producer);
+const isWine = product.category === 'wine' || product.category === 'sparkling';
+const story = product.story[locale] || producer?.story[locale] || '';
+const meta = [producer?.name, placeLine(product, locale)]
+  .filter(Boolean)
+  .join(' · ');
+const tags = product.tags.map((tag) => tagLabels[tag][locale]).join(' · ');
+const specs = [
+  { label: d.style, value: product.style[locale] },
+  {
+    label: isWine ? d.grapes : d.composition,
+    value: product.composition[locale],
+  },
+  { label: d.origin, value: product.origin[locale] },
+  { label: d.colour, value: product.colour[locale] },
+  { label: d.aroma, value: product.aroma[locale] },
+  { label: d.palate, value: product.palate[locale] },
+].filter((spec) => spec.value);
+const extraFormats = product.formats.filter(
+  (format) => format.image && format.image !== product.image,
+);
+const description = product.notes[locale] || story || t.selectionIntro;
+---
+
+<Base
+  locale={locale}
+  path={`/portfolio/product/${product.slug}`}
+  title={`${product.name} — MILESIMA`}
+  description={description}
+>
+  <main id="main" class="section">
+    <article class="wrap detail">
+      <div class="detail-gallery">
+        <div class="detail-media">
+          <DrinkImage
+            file={product.image}
+            alt={drinkAlt(product, locale)}
+            fallback="MILESIMA"
+            widths={[480, 800]}
+            sizes="(min-width: 900px) 40vw, 90vw"
+            loading="eager"
+          />
+        </div>
+        {extraFormats.length > 0 && (
+          <ul class="detail-variants">
+            {extraFormats.map((format) => (
+              <li>
+                <span class="detail-variant-media">
+                  <DrinkImage
+                    file={format.image}
+                    alt={`${product.name} — ${format.label[locale]}`}
+                    fallback=""
+                    widths={[240]}
+                    sizes="140px"
+                  />
+                </span>
+                <span class="detail-variant-label">{format.label[locale]}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      <div class="detail-body">
+        {category && (
+          <p class="eyebrow">
+            <a href={localePath(locale, `/portfolio/${category.id}`)}>
+              {category.label[locale]}
+            </a>
+          </p>
+        )}
+        <h1>{product.name}</h1>
+        <p class="detail-meta">{meta}</p>
+        {tags && <p class="detail-tags">{tags}</p>}
+        {product.notes[locale] && (
+          <p class="detail-lede">{product.notes[locale]}</p>
+        )}
+        <dl class="specs">
+          {specs.map((spec) => (
+            <div class="spec">
+              <dt>{spec.label}</dt>
+              <dd>{spec.value}</dd>
+            </div>
+          ))}
+          <div class="spec">
+            <dt>{d.formats}</dt>
+            <dd>
+              <ul class="spec-list">
+                {product.formats.map((format) => (
+                  <li>
+                    {formatLine(format, locale)} — {format.label[locale]}
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+          {product.awards.length > 0 && (
+            <div class="spec">
+              <dt>{d.awards}</dt>
+              <dd>
+                <ul class="spec-list">
+                  {product.awards.map((award) => (
+                    <li>{award[locale]}</li>
+                  ))}
+                </ul>
+              </dd>
+            </div>
+          )}
+        </dl>
+        {story && (
+          <section class="detail-story" aria-labelledby="producer-title">
+            <h2 id="producer-title">{producer ? producer.name : d.producer}</h2>
+            <p>{story}</p>
+            {producer && (
+              <a
+                class="text-action"
+                href={localePath(locale, '/producers') + `#${producer.id}`}
+              >
+                {d.allProducers} →
+              </a>
+            )}
+          </section>
+        )}
+        <p class="detail-back">
+          <a
+            class="text-action"
+            href={localePath(
+              locale,
+              category ? `/portfolio/${category.id}` : '/portfolio',
+            )}
+          >
+            {t.backToPortfolio} →
+          </a>
+        </p>
+      </div>
+    </article>
+  </main>
+</Base>

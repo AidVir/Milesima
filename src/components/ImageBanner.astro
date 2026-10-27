@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import cellar from '../assets/scenes/approach-cellar.jpg';
+import { localePath, ui, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = ui[locale];
+---
+
+<section class="banner" id="approach" aria-labelledby="approach-title">
+  <div class="banner-text">
+    <div class="banner-inner">
+      <p class="eyebrow">{t.approachEyebrow}</p>
+      <h2 id="approach-title">{t.approachTitle}</h2>
+      <p>{t.approachText}</p>
+      <a class="btn btn-inverse" href={localePath(locale, '/producers')}>
+        {t.approachCta} →
+      </a>
+    </div>
+  </div>
+  <div class="banner-media">
+    <Image
+      class="banner-photo"
+      src={cellar}
+      alt={t.approachAlt}
+      widths={[720, 1080, 1440]}
+      sizes="(min-width: 800px) 50vw, 100vw"
+      format="webp"
+      quality={75}
+      loading="lazy"
+    />
+  </div>
+</section>

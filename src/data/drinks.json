@@ -1,0 +1,3108 @@
+{
+  "producers": [
+    {
+      "id": "maison-marcellin",
+      "name": "Maison Marcellin",
+      "place": {
+        "lt": "Gaskonija, Prancūzija",
+        "en": "Gascony, France"
+      },
+      "story": {
+        "lt": "Pietvakarių Prancūzijos Gaskonijos regionas garsėja ne tik armanjaku, bet ir itin gaiviais, išraiškingais baltaisiais vynais, kuriuos formuoja saulėtas klimatas ir molio bei kalkakmenio turtingas dirvožemis. Gaskonijos širdyje, Kondomo apylinkėse, senelio įkvėptas vyndarys Medrik gamina klasikinius Gros Manseng, Colombard ir Sauvignon Blanc vynus.",
+        "en": "Gascony in south-west France is known for armagnac and for very fresh, expressive white wines, shaped by a sunny climate and soils rich in clay and limestone. Near Condom, at the heart of Gascony, winemaker Medrik follows a grandfather's example to make classic wines from Gros Manseng, Colombard and Sauvignon Blanc."
+      }
+    },
+    {
+      "id": "mr-burger",
+      "name": "Mr. Burger",
+      "place": {
+        "lt": "Langedokas, Prancūzija",
+        "en": "Languedoc, France"
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "vignobles-vellas",
+      "name": "Vignobles Vellas",
+      "place": {
+        "lt": "Langedokas, Prancūzija",
+        "en": "Languedoc, France"
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "casa-ermelinda-freitas",
+      "name": "Casa Ermelinda Freitas",
+      "place": {
+        "lt": "Setúbal, Portugalija",
+        "en": "Setúbal, Portugal"
+      },
+      "story": {
+        "lt": "Casa Ermelinda Freitas – penktosios kartos valdoma šeimos vyninė pietų Portugalijoje, Fernando Pó apylinkėse. Smėlingame, paplūdimio smėlį primenančiame dirvožemyje auginamos autentiškos Castelão ir Touriga Nacional vynuogės, iš kurių gimsta vyninę visame pasaulyje garsinantys vynai.",
+        "en": "Casa Ermelinda Freitas is a fifth-generation family winery near Fernando Pó in southern Portugal. In sandy soil much like beach sand it grows native Castelão and Touriga Nacional, the source of wines that have made its name around the world."
+      }
+    },
+    {
+      "id": "poggio-le-volpi",
+      "name": "Poggio le Volpi",
+      "place": {
+        "lt": "Lacijus ir Apulija, Italija",
+        "en": "Lazio and Puglia, Italy"
+      },
+      "story": {
+        "lt": "Poggio Le Volpi (ital. „Lapių kalvos“) vyninę 1920 m. įkūrė ambicingas Manlio Merge, iš pradžių gaminęs ne tik vyną, bet ir alyvuogių aliejų. Šiandien vyninė gamina ne tik gimtojo Lacijaus, bet ir Apulijos vynus – ten puikiai atsiskleidžia Negroamaro, Primitivo ir Susumaniello veislės. Gran Appasso ir Donnaluce – kokybės ir aistros savo darbui pavyzdys.",
+        "en": "Poggio Le Volpi (Italian for “hill of the foxes”) was founded in 1920 by Manlio Merge, who at first made olive oil as well as wine. Today the winery makes wines from its home region of Lazio and from Puglia, where Negroamaro, Primitivo and Susumaniello thrive. Gran Appasso and Donnaluce show its care for quality."
+      }
+    },
+    {
+      "id": "vivanco",
+      "name": "Vivanco",
+      "place": {
+        "lt": "Rioja, Ispanija",
+        "en": "Rioja, Spain"
+      },
+      "story": {
+        "lt": "Vivanco – legendinė Riochos vyninė, garsi senais (35 metų ir senesniais) vynuogynais, augančiais molinguose, geležies ir mineralų turtinguose dirvožemiuose, kurie suteikia vynams svarumo, elegancijos ir pikantiškumo. Vynuogės skinamos ir rūšiuojamos tik rankomis. Laikantis tradicijų, vynas išpilstomas į XVIII a. stiliaus butelius.",
+        "en": "Vivanco is a renowned Rioja house, known for old vines (35 years and more) on clay soils rich in iron and minerals, which give its wines weight, elegance and spice. Grapes are picked and sorted by hand only. True to tradition, the wine goes into 18th-century-style bottles."
+      }
+    },
+    {
+      "id": "finca-torre-tallada",
+      "name": "Finca Torre Tallada",
+      "place": {
+        "lt": "Valensija, Ispanija",
+        "en": "Valencia, Spain"
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "jean-moutardier",
+      "name": "Jean Moutardier",
+      "place": {
+        "lt": "Šampanė, Prancūzija",
+        "en": "Champagne, France"
+      },
+      "story": {
+        "lt": "Moutardier šampano namai įsikūrę netoli Le Breuil miestelio, Surmelino slėnio viduryje. Šiame slėnyje puikiai dera Meunier vynuogės, todėl net 80 % vynuogynų šeima skyrė būtent šiai veislei. Moutardier šampanus brandina ilgiau nei reikalaujama ir naudoja daugiau rezervinių vynų (vin de réserve) nei įprasta – tai juos išskiria iš kitų šampano namų.",
+        "en": "The Moutardier house sits near Le Breuil, in the middle of the Surmelin valley, where Meunier thrives; the family gives 80% of its vineyards to it. Moutardier ages its champagnes longer than required and uses more reserve wine (vin de réserve) than usual, which sets it apart from other houses."
+      }
+    },
+    {
+      "id": "soligo",
+      "name": "Soligo",
+      "place": {
+        "lt": "Treviso, Italija",
+        "en": "Treviso, Italy"
+      },
+      "story": {
+        "lt": "Soligo filosofija remiasi trimis dalykais: žeme, kuri užaugina puikias vynuoges, žmonėmis, kurie įdeda savo darbą ir širdį, ir idealais, skatinančiais tobulėti ir kurti ateitį. Kartu jie kuria putojančius vynus, kuriais vyninė gali didžiuotis.",
+        "en": "Soligo's philosophy rests on three things: the land that grows fine grapes, the people who put in their work and heart, and ideals that push them to improve and build the future. Together they make sparkling wines the winery can be proud of."
+      }
+    },
+    {
+      "id": "joseph-verdier",
+      "name": "Joseph Verdier",
+      "place": {
+        "lt": "Luara, Prancūzija",
+        "en": "Loire, France"
+      },
+      "story": {
+        "lt": "Joseph Verdier vyno namai įkurti 1927 m. pačioje Luaros slėnio širdyje. Įkūrėjas vadovavosi principu, kad kokybiškas vynas turi būti prieinamas kiekvienam, todėl vyninė greitai tapo žinoma Prancūzijoje ir pasaulyje. Šiandien namai garsūs ne tik vynais, bet ir aukštos kokybės aksominiais crémant.",
+        "en": "Joseph Verdier was founded in 1927 in the heart of the Loire Valley. Its founder held that good wine should be within everyone's reach, and the house soon became known in France and abroad. Today it is known for its wines and for fine, velvety crémants."
+      }
+    },
+    {
+      "id": "castell-de-sant-pau",
+      "name": "Castell de Sant Pau",
+      "place": {
+        "lt": "Penedès, Ispanija",
+        "en": "Penedès, Spain"
+      },
+      "story": {
+        "lt": "Bodegas Lopez-Alonzo siūlo platų, apgalvotą kokybiškų vynų asortimentą, kuriame svarbiausia skonio grynumas ir regiono savitumas. Klasikinės veislės, kruopšti senų vynuogynų priežiūra ir kontroliuojamas gamybos procesas užtikrina kokybę ir pastovumą. Ramieji ir putojantys vynai dažnai brandinami ilgiau nei įprasta, kad atsiskleistų kilmės vietos charakteris.",
+        "en": "Bodegas Lopez-Alonzo offers a broad, considered range of quality wines focused on purity of flavour and regional character. Classic varieties, careful work in old vineyards and a controlled process ensure quality and consistency. Still and sparkling wines are often aged longer than usual to show the character of the place."
+      }
+    },
+    {
+      "id": "kinahans",
+      "name": "Kinahan's",
+      "place": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "story": {
+        "lt": "Kinahan's – seniausia licencijuota Airijos viskio darykla, įkurta dar 1779 m. Ji puoselėja ilgametes tradicijas, kartu diegia inovacijas ir kuria naujus skonius. Pasaulinį pripažinimą pelnė viskiai, brandinti skirtingų ąžuolų bačkose, ir ištobulinta distiliatų sudėtis, maišant skirtingas grūdines kultūras.",
+        "en": "Kinahan's is the oldest licensed whiskey house in Ireland, founded in 1779. It keeps long traditions while innovating and creating new flavours, and won its reputation with whiskeys matured in casks of different oaks and with blends of several grains."
+      }
+    },
+    {
+      "id": "bagots",
+      "name": "Bagots",
+      "place": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "story": {
+        "lt": "Bagots – Kinahan's atkurta istorinė viskio linija, gaminta 1920 m. Modernios technologijos ir senoji receptūra leido atkurti viskį, kuris jau pelnė žinovų pripažinimą. Išskirtinis bruožas – brandinimas stipriųjų vynų bačkose ir įmaišytas kukurūzų distiliatas.",
+        "en": "Bagots is a historic whiskey line from 1920, revived by Kinahan's. Modern methods and the old recipe brought back a whiskey that has already won over connoisseurs. Its signature is maturation in fortified-wine casks and a share of corn spirit."
+      }
+    },
+    {
+      "id": "yakusun",
+      "name": "Yakusun",
+      "place": {
+        "lt": "Airija ir Japonija",
+        "en": "Ireland and Japan"
+      },
+      "story": {
+        "lt": "Yakusun gimė Kinahan's namuose iš noro platesnei auditorijai pristatyti japoniškų distiliavimo tradicijų eleganciją ir pagerbti pokario Japonijos istoriją bei kultūrą, kiekvieną gėrimą apipinant tikromis istorijomis. Tai sudėtingi, kartu lengvi ir išraiškingi skonio profiliai, gaunami maišant brandintą japonišką viskį ar natūralius ingredientus – juzu citrinas, pasiflorus.",
+        "en": "Yakusun was born at Kinahan's to bring the elegance of Japanese distilling to a wider audience and to honour post-war Japanese history and culture, each bottle tied to a true story. The profiles are complex yet light and expressive, blending aged Japanese whisky or natural ingredients such as yuzu and passion fruit."
+      }
+    },
+    {
+      "id": "naud",
+      "name": "Naud",
+      "place": {
+        "lt": "Konjakas, Prancūzija",
+        "en": "Cognac, France"
+      },
+      "story": {
+        "lt": "Naud konjako namai – 1923 m. įkurtas šeimos verslas, kurį valdo jau penktoji Naud šeimos karta. Visas gamybos procesas – nuo vynuogių surinkimo iki išpilstymo – vyksta pačių gamintojų rankose.",
+        "en": "Naud is a family cognac house founded in 1923 and now run by the fifth generation. The family handles every step itself, from the harvest to bottling."
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "slug": "marcellin-sauvignon-blanc",
+      "name": "Maison Marcellin Sauvignon Blanc",
+      "category": "wine",
+      "producer": "maison-marcellin",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Côtes de Gascogne",
+        "en": "Côtes de Gascogne"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Baltas sausas",
+        "en": "White, dry"
+      },
+      "composition": {
+        "lt": "Sauvignon Blanc",
+        "en": "Sauvignon Blanc"
+      },
+      "colour": {
+        "lt": "Šviesiai geltona, blyškių šiaudų su žalsvais atspalviais",
+        "en": "Pale straw yellow with green tints"
+      },
+      "aroma": {
+        "lt": "Citrusiniai vaisiai, juodieji serbentai, agrastai, gėlių užuominos",
+        "en": "Citrus fruit, blackcurrant, gooseberry and a hint of flowers"
+      },
+      "palate": {
+        "lt": "Gaivus, gerai subalansuotos rūgšties. Švarus, lengvas ir ilgas poskonis.",
+        "en": "Fresh, with well-balanced acidity. A clean, light and long finish."
+      },
+      "notes": {
+        "lt": "Lengvo kūno vynas, kuriam būdinga gaivi rūgštis ir išraiškingas, intensyvus aromatas. Kalkakmeniu turtingas dirvožemis suteikia jam minerališkumo. Fermentuojama nerūdijančio plieno talpose, kad būtų išlaikytas vaisių gaivumas ir aromatingumas.",
+        "en": "A light-bodied wine with fresh acidity and an expressive, intense nose. Limestone-rich soil gives it minerality. Fermented in stainless steel to keep the fruit fresh and aromatic."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,1",
+          "en": "Vivino – 4.1"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 11.5,
+          "image": ""
+        }
+      ],
+      "image": "marcellin-sauvignon-blanc.jpg",
+      "price": null
+    },
+    {
+      "slug": "marcellin-sauvignon-gros-manseng",
+      "name": "Maison Marcellin Sauvignon Blanc – Gros Manseng",
+      "category": "wine",
+      "producer": "maison-marcellin",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Côtes de Gascogne",
+        "en": "Côtes de Gascogne"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Baltas pusiau sausas",
+        "en": "White, off-dry"
+      },
+      "composition": {
+        "lt": "Sauvignon Blanc, Gros Manseng",
+        "en": "Sauvignon Blanc, Gros Manseng"
+      },
+      "colour": {
+        "lt": "Šviesiai geltona, blyškių šiaudų su žalsvais atspalviais",
+        "en": "Pale straw yellow with green tints"
+      },
+      "aroma": {
+        "lt": "Egzotiniai vaisiai, persikai, juodieji serbentai, agrastai, gėlių užuominos",
+        "en": "Exotic fruit, peach, blackcurrant, gooseberry and a hint of flowers"
+      },
+      "palate": {
+        "lt": "Gaivus, gerai subalansuotos rūgšties. Švarus, lengvas ir ilgas poskonis.",
+        "en": "Fresh, with well-balanced acidity. A clean, light and long finish."
+      },
+      "notes": {
+        "lt": "Gros Manseng vynuogės Gaskonijos Sauvignon Blanc suteikia daugiau kūno, išryškina aromatus ir daro vyną koncentruotesnį. Tinka kaip aperityvas ir dera su intensyvaus skonio Azijos virtuvės patiekalais: aštresniais, imbieru ar kariu gardintais patiekalais, „Pad Thai“ makaronais.",
+        "en": "Gros Manseng gives the Gascon Sauvignon Blanc more body, lifts the aromatics and adds concentration. Good as an aperitif and with bold Asian dishes: spicier food seasoned with ginger or curry, or pad thai."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,1",
+          "en": "Vivino – 4.1"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 11.5,
+          "image": ""
+        }
+      ],
+      "image": "marcellin-sauvignon-gros-manseng.jpg",
+      "price": null
+    },
+    {
+      "slug": "lou-gat-yellow",
+      "name": "Lou Gat Yellow Côtes de Gascogne Blanc IGP",
+      "category": "wine",
+      "producer": "maison-marcellin",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Côtes de Gascogne",
+        "en": "Côtes de Gascogne"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Baltas sausas",
+        "en": "White, dry"
+      },
+      "composition": {
+        "lt": "Sauvignon Blanc, Gros Manseng",
+        "en": "Sauvignon Blanc, Gros Manseng"
+      },
+      "colour": {
+        "lt": "Šviesiai geltona, blyškių šiaudų su žalsvais atspalviais",
+        "en": "Pale straw yellow with green tints"
+      },
+      "aroma": {
+        "lt": "Egzotiniai vaisiai, persikai, juodieji serbentai, agrastai, gėlių užuominos",
+        "en": "Exotic fruit, peach, blackcurrant, gooseberry and a hint of flowers"
+      },
+      "palate": {
+        "lt": "Gaivus, gerai subalansuotos rūgšties. Švarus, lengvas ir ilgas poskonis.",
+        "en": "Fresh, with well-balanced acidity. A clean, light and long finish."
+      },
+      "notes": {
+        "lt": "Gros Manseng vynuogės Gaskonijos Sauvignon Blanc suteikia daugiau kūno, išryškina aromatus ir daro vyną koncentruotesnį. Tinka kaip aperityvas ir dera su intensyvaus skonio Azijos virtuvės patiekalais: aštresniais, imbieru ar kariu gardintais patiekalais, „Pad Thai“ makaronais.",
+        "en": "Gros Manseng gives the Gascon Sauvignon Blanc more body, lifts the aromatics and adds concentration. Good as an aperitif and with bold Asian dishes: spicier food seasoned with ginger or curry, or pad thai."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,1",
+          "en": "Vivino – 4.1"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 11.5,
+          "image": ""
+        }
+      ],
+      "image": "lou-gat-yellow.jpg",
+      "price": null
+    },
+    {
+      "slug": "mr-burger-gsm",
+      "name": "Mr. Burger GSM Smooth & Smokey Languedoc AOP",
+      "category": "wine",
+      "producer": "mr-burger",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Langedokas",
+        "en": "Languedoc"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Grenache, Syrah, Mourvèdre",
+        "en": "Grenache, Syrah, Mourvèdre"
+      },
+      "colour": {
+        "lt": "Gili, intensyviai purpurinė su granatų raudonumo atspalviais",
+        "en": "Deep, intense purple with garnet tints"
+      },
+      "aroma": {
+        "lt": "Vaisiškas: dominuoja juodieji serbentai, slyvos, gervuogės, degintas medis ir vanilė",
+        "en": "Fruit-led: blackcurrant, plum and blackberry, with charred wood and vanilla"
+      },
+      "palate": {
+        "lt": "Harmoningai dera juodosios uogos, prieskoniai, tamsios slyvos, gervuogės",
+        "en": "Black fruit, spice, dark plum and blackberry in harmony"
+      },
+      "notes": {
+        "lt": "Itin švelnių taninų vynas, metus ir ilgiau brandintas prancūziško ąžuolo statinėse, iš kurių net 30 % yra naujos. Pikantiški akcentai: rūkytas bekonas, tabakas, saldymedis ir Viduržemio jūros žolelės. Tiks prie ant grilio keptų paplotėlių, žvėrienos, ėrienos ir rūkytų užkandžių.",
+        "en": "Very soft tannins, aged for a year or more in French oak, 30% of it new. Savoury notes of smoked bacon, tobacco, liquorice and Mediterranean herbs. For grilled burgers, game, lamb and smoked snacks."
+      },
+      "story": {
+        "lt": "„Mr. Burger“ – sausas raudonasis vynas iš klasikinio pietų Prancūzijos (Langedoko) vynuogių mišinio, sukurtas idealiai derėti prie kepsnių ir mėsainių paplotėlių. Jis jungia šiuolaikinę gastronomiją su išpuoselėta vyno kultūra: galingas, bet stebėtinai švelnus ir aksominės struktūros.",
+        "en": "Mr. Burger is a dry red from a classic southern French blend, from the Languedoc, made to go with steaks and burgers. It joins modern casual food with a careful wine culture: powerful, yet surprisingly soft and velvety."
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 3,9",
+          "en": "Vivino – 3.9"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 14.5,
+          "image": ""
+        }
+      ],
+      "image": "mr-burger-gsm.jpg",
+      "price": null
+    },
+    {
+      "slug": "vellas-bourbon-barrel-cabernet-sauvignon",
+      "name": "Vignobles Vellas Bourbon Barrel Cabernet Sauvignon",
+      "category": "wine",
+      "producer": "vignobles-vellas",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Pays d'Oc",
+        "en": "Pays d'Oc"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Cabernet Sauvignon",
+        "en": "Cabernet Sauvignon"
+      },
+      "colour": {
+        "lt": "Gili, tamsi, su rubino atspindžiais kraštuose",
+        "en": "Deep and dark, with ruby glints at the rim"
+      },
+      "aroma": {
+        "lt": "Galingas, kompleksiškas: trinti juodieji serbentai, slyvų džemas, tabakas, karamelė",
+        "en": "Powerful and complex: crushed blackcurrant, plum jam, tobacco, caramel"
+      },
+      "palate": {
+        "lt": "Serbentų, odos ir žemės natos. Ilgai išliekantis poskonis",
+        "en": "Blackcurrant, leather and earthy notes. A long finish"
+      },
+      "notes": {
+        "lt": "Išskirtinis bruožas – galingas, ilgai išliekantis poskonis, kuriame subtiliai dera salstelėjimas ir dūminis burbono charakteris. Pilno kūno vynas idealiai tiks prie kepsninėje paruoštų patiekalų ir brandintos raudonos mėsos.",
+        "en": "Its signature is a powerful, lingering finish where gentle sweetness meets the smoky character of bourbon. A full-bodied wine for barbecue and aged red meat."
+      },
+      "story": {
+        "lt": "„Vignobles Vellas Bourbon Barrel“ – drąsi dviejų pasaulių sąjunga: elegantiška Langedoko vyndarystės klasika susitinka su dūmine Amerikos tradicija. Prancūziškas Cabernet Sauvignon 12 mėnesių brandinamas Jack Daniel's burbono statinėse, o butelį puošia tikros odos etiketė.",
+        "en": "Vignobles Vellas Bourbon Barrel is a bold meeting of two worlds: classic Languedoc winemaking and the smoky American tradition. French Cabernet Sauvignon spends 12 months in Jack Daniel's bourbon barrels, and the bottle carries a real leather label."
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,4",
+          "en": "Vivino – 4.4"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 14.5,
+          "image": ""
+        }
+      ],
+      "image": "vellas-bourbon-barrel.jpg",
+      "price": null
+    },
+    {
+      "slug": "bocage-red-blend",
+      "name": "Bocage Red Blend",
+      "category": "wine",
+      "producer": "casa-ermelinda-freitas",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Portugalija",
+        "en": "Portugal"
+      },
+      "region": {
+        "lt": "Setúbalio pusiasalis",
+        "en": "Península de Setúbal"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Syrah, Castelão, Aragonez, Alicante Bouschet",
+        "en": "Syrah, Castelão, Aragonez, Alicante Bouschet"
+      },
+      "colour": {
+        "lt": "Tamsaus rubino atspalvio",
+        "en": "Dark ruby"
+      },
+      "aroma": {
+        "lt": "Prinokusios slyvos, mėlynės, šiek tiek gervuogių ir raudonųjų uogų",
+        "en": "Ripe plum, blueberry, a touch of blackberry and red berries"
+      },
+      "palate": {
+        "lt": "Aiškiai išreikšta vanilė, šokolado, vyšnių ir vaisių džemo potėpiai",
+        "en": "Clear vanilla, with chocolate, cherry and fruit jam"
+      },
+      "notes": {
+        "lt": "Labai švelnių, subrendusių taninų vynas, mažiausiai keturis mėnesius brandintas ąžuolo statinėse. Subalansuotas, kompleksiškas ir lengvas, mažesnio rūgštingumo. Rekomenduojamas prie sūrių ir grilio patiekalų. Patiekti 16–18 °C temperatūros.",
+        "en": "Very soft, ripe tannins, at least four months in oak. Balanced, complex and easy, with lower acidity. Recommended with cheese and grilled dishes. Serve at 16–18 °C."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,2",
+          "en": "Vivino – 4.2"
+        },
+        {
+          "lt": "International Wine Challenge 2025 – Commended",
+          "en": "International Wine Challenge 2025 – Commended"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 14,
+          "image": ""
+        }
+      ],
+      "image": "bocage-red-blend.jpg",
+      "price": null
+    },
+    {
+      "slug": "bocage-vinho-branco",
+      "name": "Bocage Vinho Branco",
+      "category": "wine",
+      "producer": "casa-ermelinda-freitas",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Portugalija",
+        "en": "Portugal"
+      },
+      "region": {
+        "lt": "Setúbalio pusiasalis",
+        "en": "Península de Setúbal"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Baltas sausas",
+        "en": "White, dry"
+      },
+      "composition": {
+        "lt": "Chardonnay, Sauvignon Blanc, Arinto, Antão Vaz",
+        "en": "Chardonnay, Sauvignon Blanc, Arinto, Antão Vaz"
+      },
+      "colour": {
+        "lt": "Intensyvi geltona su žalsvais atspalviais",
+        "en": "Intense yellow with green tints"
+      },
+      "aroma": {
+        "lt": "Citrusinių ir tropinių vaisių potėpiai",
+        "en": "Citrus and tropical fruit"
+      },
+      "palate": {
+        "lt": "Egzotiniai vaisiai, tarp kurių dominuoja mangai ir greipfrutai",
+        "en": "Exotic fruit, led by mango and grapefruit"
+      },
+      "notes": {
+        "lt": "Keturis mėnesius ąžuolo statinėse brandintas vynas. Galingas, sodraus skonio, kartu gaivus, su ilgai išliekančiu poskoniu. Tinka prie autentiškų Portugalijos patiekalų ir baltos mėsos, išryškina jų skonį. Patiekti 10–12 °C temperatūros.",
+        "en": "Aged four months in oak. Powerful and rich yet fresh, with a long finish. For traditional Portuguese dishes and white meat, whose flavours it lifts. Serve at 10–12 °C."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 3,9",
+          "en": "Vivino – 3.9"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 13.5,
+          "image": ""
+        }
+      ],
+      "image": "bocage-vinho-branco.jpg",
+      "price": null
+    },
+    {
+      "slug": "vinha-de-fonte-reserva",
+      "name": "Vinha de Fonte Reserva",
+      "category": "wine",
+      "producer": "casa-ermelinda-freitas",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Portugalija",
+        "en": "Portugal"
+      },
+      "region": {
+        "lt": "Setúbalio pusiasalis",
+        "en": "Península de Setúbal"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Castelão, Cabernet Sauvignon, Syrah, Touriga Nacional, Alicante Bouschet",
+        "en": "Castelão, Cabernet Sauvignon, Syrah, Touriga Nacional, Alicante Bouschet"
+      },
+      "colour": {
+        "lt": "Tamsiai raudona su granatų atspalviais",
+        "en": "Dark red with garnet tints"
+      },
+      "aroma": {
+        "lt": "Slyvos, gervuogės, saldūs prieskoniai, kava ir šokoladas",
+        "en": "Plum, blackberry, sweet spice, coffee and chocolate"
+      },
+      "palate": {
+        "lt": "Gervuogės, anyžius, brandinimo suteikta vanilė, zefyrai, kava",
+        "en": "Blackberry, anise, vanilla from the oak, marshmallow, coffee"
+      },
+      "notes": {
+        "lt": "Kompleksiškas, turtingo skonio ir švelnių taninų vynas, 12 mėnesių brandintas prancūziško ir amerikietiško ąžuolo statinėse. Švelnus, ilgas poskonis. Patiekti 16–18 °C temperatūros; dera prie Viduržemio jūros virtuvės, makaronų, ėrienos.",
+        "en": "Complex and rich with soft tannins, aged 12 months in French and American oak. A smooth, long finish. Serve at 16–18 °C with Mediterranean food, pasta or lamb."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,0",
+          "en": "Vivino – 4.0"
+        },
+        {
+          "lt": "IWSC – 93 balai",
+          "en": "IWSC – 93 points"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 14.5,
+          "image": ""
+        }
+      ],
+      "image": "vinha-de-fonte-reserva.jpg",
+      "price": null
+    },
+    {
+      "slug": "montecore-primitivo",
+      "name": "Montecore Primitivo Puglia IGP",
+      "category": "wine",
+      "producer": "poggio-le-volpi",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Italija",
+        "en": "Italy"
+      },
+      "region": {
+        "lt": "Apulija",
+        "en": "Puglia"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Primitivo",
+        "en": "Primitivo"
+      },
+      "colour": {
+        "lt": "Raudona su tamsių rožių atspalviu",
+        "en": "Red with a dark rose tint"
+      },
+      "aroma": {
+        "lt": "Miško uogos – gervuogės, mėlynės; šokoladas, likeris",
+        "en": "Forest berries – blackberry, blueberry; chocolate, liqueur"
+      },
+      "palate": {
+        "lt": "Sodrus, su ilgai išliekančiu poskoniu. Juntami pipirai, cinamonas, uogų džemas",
+        "en": "Rich, with a long finish. Pepper, cinnamon, berry jam"
+      },
+      "notes": {
+        "lt": "Vynuogės užauginamos pietų Italijoje, Apulijoje, kur gauna daug saulės ir šilumos, todėl vynas sodrus, intensyvus ir tvirto kūno. Puikus „Femar“ vyninės kainos ir kokybės santykio pavyzdys. Dera prie jautienos kepsnių, grilio patiekalų ir brandintų sūrių.",
+        "en": "The grapes grow in Puglia in southern Italy, with plenty of sun and warmth, so the wine is rich, intense and firm. A fine example of the Femar winery's value. With beef steaks, grilled dishes and aged cheese."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Luca Maroni – 98 balai",
+          "en": "Luca Maroni – 98 points"
+        },
+        {
+          "lt": "Vivino – 4,0",
+          "en": "Vivino – 4.0"
+        },
+        {
+          "lt": "Berliner Wein Trophy 2023 – auksas",
+          "en": "Berliner Wein Trophy 2023 – Gold"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 13.5,
+          "image": ""
+        }
+      ],
+      "image": "montecore-primitivo.jpg",
+      "price": null
+    },
+    {
+      "slug": "christmas-edition-leggermente-appassite-rosso",
+      "name": "Christmas Edition Leggermente Appassite Rosso Puglia IGP",
+      "category": "wine",
+      "producer": "",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Italija",
+        "en": "Italy"
+      },
+      "region": {
+        "lt": "Apulija",
+        "en": "Puglia"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Cabernet Sauvignon, Negroamaro, Syrah, Primitivo",
+        "en": "Cabernet Sauvignon, Negroamaro, Syrah, Primitivo"
+      },
+      "colour": {
+        "lt": "Intensyvios rubino spalvos",
+        "en": "Intense ruby"
+      },
+      "aroma": {
+        "lt": "Uogienė, juodosios vyšnios, šokoladas, prinokusios slyvos",
+        "en": "Jam, black cherry, chocolate, ripe plum"
+      },
+      "palate": {
+        "lt": "Pilno kūno, tirštas ir aksominis, su „appassite“ vynams būdingu salstelėjimu",
+        "en": "Full-bodied, dense and velvety, with the gentle sweetness typical of appassite wines"
+      },
+      "notes": {
+        "lt": "Koncentruoto skonio vynas, spaudžiamas iš ant specialių kilimėlių džiovintų vynuogių ir vėliau mažiausiai pusę metų brandinamas ąžuolo statinėse. Dėl švelnių taninų ir salstelėjimo dera ne tik prie tradicinių Kalėdų patiekalų, bet ir prie desertų.",
+        "en": "A concentrated wine pressed from grapes dried on mats, then aged at least six months in oak. Soft tannins and a touch of sweetness suit traditional Christmas dishes as well as desserts."
+      },
+      "story": {
+        "lt": "Riboto leidimo vynas, sukurtas gražiausioms metų šventėms iš Apulijoje užaugintų ir vytintų vynuogių. Italijos meistrų kurtas derėti su orkaitėje kepta raudona mėsa, pikantiškais sūrių užkandžiais ir salstelėjusiais padažais gardintais patiekalais.",
+        "en": "A limited edition made for the holidays from grapes grown and dried in Puglia. Made to go with roast red meat, savoury cheese plates and dishes with slightly sweet sauces."
+      },
+      "awards": [
+        {
+          "lt": "Luca Maroni – 97 balai",
+          "en": "Luca Maroni – 97 points"
+        },
+        {
+          "lt": "Vivino – 4,1",
+          "en": "Vivino – 4.1"
+        }
+      ],
+      "tags": [
+        "limited"
+      ],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 14,
+          "image": ""
+        }
+      ],
+      "image": "christmas-edition-rosso.jpg",
+      "price": null
+    },
+    {
+      "slug": "gran-appasso-puglia-rosso",
+      "name": "Gran Appasso Puglia Rosso (Aged in Oak)",
+      "category": "wine",
+      "producer": "poggio-le-volpi",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Italija",
+        "en": "Italy"
+      },
+      "region": {
+        "lt": "Apulija",
+        "en": "Puglia"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Cabernet Sauvignon, Negroamaro, Syrah ir kitos",
+        "en": "Cabernet Sauvignon, Negroamaro, Syrah and others"
+      },
+      "colour": {
+        "lt": "Intensyvios rubino spalvos",
+        "en": "Intense ruby"
+      },
+      "aroma": {
+        "lt": "Laukinės uogos, vyšnios",
+        "en": "Wild berries, cherry"
+      },
+      "palate": {
+        "lt": "Elegantiškos pieniško šokolado užuominos, vanilės, slyvų uogienės ir ąžuolo natos",
+        "en": "Elegant hints of milk chocolate, with vanilla, plum jam and oak"
+      },
+      "notes": {
+        "lt": "Vynuogės spaudžiamos švelniai, kad nebūtų sutraiškyti kauliukai, todėl vynas švelnus ir be kartumo. Vidutinio kūno, neagresyvios rūgšties, su dideliu ir intensyviu vaisiškumu.",
+        "en": "Gentle pressing leaves the pips uncrushed, so the wine is soft with no bitterness. Medium-bodied, with gentle acidity and generous, intense fruit."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Luca Maroni – 98 balai",
+          "en": "Luca Maroni – 98 points"
+        },
+        {
+          "lt": "Vivino – 4,0",
+          "en": "Vivino – 4.0"
+        },
+        {
+          "lt": "Berliner Wein Trophy 2023 – auksas",
+          "en": "Berliner Wein Trophy 2023 – Gold"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 14,
+          "image": ""
+        }
+      ],
+      "image": "gran-appasso-rosso.jpg",
+      "price": null
+    },
+    {
+      "slug": "gran-appasso-susumaniello",
+      "name": "Gran Appasso Susumaniello",
+      "category": "wine",
+      "producer": "poggio-le-volpi",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Italija",
+        "en": "Italy"
+      },
+      "region": {
+        "lt": "Apulija",
+        "en": "Puglia"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Susumaniello (85 %) ir kitos",
+        "en": "Susumaniello (85%) and others"
+      },
+      "colour": {
+        "lt": "Intensyvios rubino spalvos su violetiniais atspalviais",
+        "en": "Intense ruby with violet tints"
+      },
+      "aroma": {
+        "lt": "Raudonos gėlės, šiek tiek tabako, raudonieji vaisiai",
+        "en": "Red flowers, a little tobacco, red fruit"
+      },
+      "palate": {
+        "lt": "Prinokusių slyvų ir vanilės natos, šiek tiek saldumo ir marcipano",
+        "en": "Ripe plum and vanilla, a touch of sweetness and marzipan"
+      },
+      "notes": {
+        "lt": "Gaminamas tik iš rankomis skintų vynuogių. Pilno kūno, šviežias ir vaisiškas, su ilgu, išraiškingu poskoniu, kuriame atsiskleidžia tabakas, oda ir vanilė; pikantiškumo suteikia šokolado niuansai. Tinka gurkšnoti vienam arba su barbekiu, jautiena, ėriena ir makaronų patiekalais.",
+        "en": "Made only from hand-picked grapes. Full-bodied, fresh and fruity, with a long, expressive finish of tobacco, leather and vanilla, and a savoury edge of chocolate. For sipping on its own or with barbecue, beef, lamb and pasta."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Berliner Wein Trophy 2023 – auksas",
+          "en": "Berliner Wein Trophy 2023 – Gold"
+        },
+        {
+          "lt": "Luca Maroni 2022 – 97 balai",
+          "en": "Luca Maroni 2022 – 97 points"
+        },
+        {
+          "lt": "Luca Maroni 2021 – 98 balai",
+          "en": "Luca Maroni 2021 – 98 points"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 14,
+          "image": ""
+        }
+      ],
+      "image": "gran-appasso-susumaniello.jpg",
+      "price": null
+    },
+    {
+      "slug": "gran-appasso-primitivo-appassimento",
+      "name": "Gran Appasso Primitivo Appassimento",
+      "category": "wine",
+      "producer": "poggio-le-volpi",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Italija",
+        "en": "Italy"
+      },
+      "region": {
+        "lt": "Apulija",
+        "en": "Puglia"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Primitivo",
+        "en": "Primitivo"
+      },
+      "colour": {
+        "lt": "Intensyvios ir gilios, ryškiai raudonos spalvos",
+        "en": "Intense, deep bright red"
+      },
+      "aroma": {
+        "lt": "Labai intensyvūs raudonų prinokusių vyšnių, balzamiko ir raudonųjų serbentų aromatai",
+        "en": "Very intense ripe red cherry, balsamic and redcurrant"
+      },
+      "palate": {
+        "lt": "Raudonieji serbentai ir miško uogos, vanilė ir prinokusios vyšnios",
+        "en": "Redcurrant and forest berries, vanilla and ripe cherry"
+      },
+      "notes": {
+        "lt": "Pagamintas „appassimento“ metodu, kad įgautų daugiau koncentracijos ir sodrumo. Pasižymi subtiliu minerališkumu, sudėtingu ir struktūrizuotu skoniu; švelnus, su labai ilgu poskoniu. Tinka prie vidutiniškai brandintų sūrių ir grilio patiekalų.",
+        "en": "Made by the appassimento method for extra concentration and richness. Subtle minerality and a complex, structured palate; smooth, with a very long finish. With medium-aged cheese and grilled dishes."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Mundus Vini 2022 – auksas",
+          "en": "Mundus Vini 2022 – Gold"
+        },
+        {
+          "lt": "Luca Maroni 2022 – 98 balai",
+          "en": "Luca Maroni 2022 – 98 points"
+        },
+        {
+          "lt": "Luca Maroni 2021 – 99 balai",
+          "en": "Luca Maroni 2021 – 99 points"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 16,
+          "image": ""
+        }
+      ],
+      "image": "gran-appasso-primitivo.jpg",
+      "price": null
+    },
+    {
+      "slug": "poggio-le-volpi-baccarossa",
+      "name": "Poggio le Volpi Baccarossa Lazio IGP",
+      "category": "wine",
+      "producer": "poggio-le-volpi",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Italija",
+        "en": "Italy"
+      },
+      "region": {
+        "lt": "Lacijus",
+        "en": "Lazio"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Nero Buono ir kitos",
+        "en": "Nero Buono and others"
+      },
+      "colour": {
+        "lt": "Intensyvios ir gilios rubino spalvos",
+        "en": "Intense, deep ruby"
+      },
+      "aroma": {
+        "lt": "Juodosios uogos, alkoholyje konservuotos vyšnios, kakava, Viduržemio pakrantės augalija",
+        "en": "Black berries, cherries in spirit, cocoa, Mediterranean scrub"
+      },
+      "palate": {
+        "lt": "Pernokusios vyšnios, juodosios slyvos, vanilė, tabakas, gervuogės",
+        "en": "Overripe cherry, black plum, vanilla, tobacco, blackberry"
+      },
+      "notes": {
+        "lt": "Mažiausiai 12 mėnesių brandintas, išskirtinai intensyvaus skonio ir aromato vynas. Labai švelnių taninų, gerai subalansuotas. Maceracija ir fermentacija vyksta griežtai kontroliuojamoje pastovioje temperatūroje, o vynuogės presuojamos lengvai.",
+        "en": "Aged at least 12 months, with exceptionally intense flavour and aroma. Very soft tannins and good balance. Maceration and fermentation run at a tightly controlled, steady temperature, and the grapes are pressed lightly."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Luca Maroni 2022 – 99 balai",
+          "en": "Luca Maroni 2022 – 99 points"
+        },
+        {
+          "lt": "Luca Maroni 2020 – 99 balai",
+          "en": "Luca Maroni 2020 – 99 points"
+        },
+        {
+          "lt": "Luca Maroni 2019 – 99 balai",
+          "en": "Luca Maroni 2019 – 99 points"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 16,
+          "image": ""
+        }
+      ],
+      "image": "poggio-le-volpi-baccarossa.jpg",
+      "price": null
+    },
+    {
+      "slug": "vivanco-reserva",
+      "name": "Vivanco Reserva",
+      "category": "wine",
+      "producer": "vivanco",
+      "status": "active",
+      "featured": true,
+      "country": {
+        "lt": "Ispanija",
+        "en": "Spain"
+      },
+      "region": {
+        "lt": "Rioja",
+        "en": "Rioja"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Tempranillo (90 %), Graciano (10 %)",
+        "en": "Tempranillo (90%), Graciano (10%)"
+      },
+      "colour": {
+        "lt": "Gili raudona su švelniais violetiniais atspalviais",
+        "en": "Deep red with soft violet tints"
+      },
+      "aroma": {
+        "lt": "Gervuogės, šalavijas, cinamonas",
+        "en": "Blackberry, sage, cinnamon"
+      },
+      "palate": {
+        "lt": "Elegantiški taninai, neįkyri rūgštis, pilnas kūnas. Pieniškas šokoladas, vyšnios.",
+        "en": "Elegant tannins, gentle acidity, full body. Milk chocolate and cherry."
+      },
+      "notes": {
+        "lt": "Vynas fermentuojamas mažose prancūziško ąžuolo statinėse, vėliau maceruojamas su vynuogių odelėmis 30 °C temperatūroje. Brandinamas pirmojo ir antrojo naudojimo amerikietiško bei prancūziško ąžuolo statinėse mažiausiai 24 mėnesius.",
+        "en": "Fermented in small French oak barrels, then macerated on the skins at 30 °C. Aged at least 24 months in first- and second-use American and French oak."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Robert Parker Wine Advocate 2025 – 91 balas",
+          "en": "Robert Parker Wine Advocate 2025 – 91 points"
+        },
+        {
+          "lt": "Robert Parker Wine Advocate 2024 – 92 balai",
+          "en": "Robert Parker Wine Advocate 2024 – 92 points"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 14.5,
+          "image": ""
+        }
+      ],
+      "image": "vivanco-reserva.jpg",
+      "price": null
+    },
+    {
+      "slug": "finca-torre-tallada-crianza-2020",
+      "name": "Finca Torre Tallada Crianza 2020",
+      "category": "wine",
+      "producer": "finca-torre-tallada",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Ispanija",
+        "en": "Spain"
+      },
+      "region": {
+        "lt": "Valensija",
+        "en": "Valencia"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Raudonas sausas",
+        "en": "Red, dry"
+      },
+      "composition": {
+        "lt": "Tempranillo",
+        "en": "Tempranillo"
+      },
+      "colour": {
+        "lt": "Rubino atspalvio su oranžiniais potėpiais taurės pakraščiuose",
+        "en": "Ruby, with orange hints at the rim"
+      },
+      "aroma": {
+        "lt": "Gervuogės, šalavijas, cinamonas",
+        "en": "Blackberry, sage, cinnamon"
+      },
+      "palate": {
+        "lt": "Sunokusios tamsios uogos, lengvas dūmas, ąžuolo ir vanilės akcentai",
+        "en": "Ripe dark berries, light smoke, oak and vanilla"
+      },
+      "notes": {
+        "lt": "Apie metus brandintas ąžuolo statinėse ir tiek pat butelyje, todėl įgauna vaisiškumo, vanilės ir prieskonių natų, o taninai tampa minkštesni. Lengvai derinamas su maistu: tiks prie Viduržemio regiono patiekalų ir tradicinės virtuvės.",
+        "en": "About a year in oak and as long again in bottle, which brings fruit, vanilla and spice and softens the tannins. Easy with food, from Mediterranean dishes to traditional cooking."
+      },
+      "story": {
+        "lt": "Vynas ilgiems ir jaukiems vakarams: aksominės tekstūros, charakteringas, su saulės įkaitintų raudonųjų uogų aromatu. Gerai įvertintas įvairių šalių konkursuose. Puikiai tiks su ispaniškais užkandžiais (tapas), jautienos didkepsniais ar vidutiniškai brandintais „Džiugo“ sūriais.",
+        "en": "A wine for long, easy evenings: velvety, with character and the aroma of sun-warmed red berries. Well rated at competitions in several countries. With Spanish tapas, beef steaks or medium-aged Džiugas cheese."
+      },
+      "awards": [
+        {
+          "lt": "Mundus Vini 2022 – Grand Gold",
+          "en": "Mundus Vini 2022 – Grand Gold"
+        },
+        {
+          "lt": "Berliner Wein Trophy 2023 – auksas",
+          "en": "Berliner Wein Trophy 2023 – Gold"
+        }
+      ],
+      "tags": [
+        "vintage"
+      ],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 13.5,
+          "image": ""
+        }
+      ],
+      "image": "finca-torre-tallada-crianza.jpg",
+      "price": null
+    },
+    {
+      "slug": "jean-moutardier-carte-d-or-extra-brut",
+      "name": "Jean Moutardier Cuvée Carte d'Or Extra Brut",
+      "category": "sparkling",
+      "producer": "jean-moutardier",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Šampanė",
+        "en": "Champagne"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Šampanas, baltas sausas",
+        "en": "Champagne, white, dry"
+      },
+      "composition": {
+        "lt": "Meunier (80 %), Chardonnay (10 %), Pinot Noir (10 %)",
+        "en": "Meunier (80%), Chardonnay (10%), Pinot Noir (10%)"
+      },
+      "colour": {
+        "lt": "Švelnios aukso spalvos",
+        "en": "Soft gold"
+      },
+      "aroma": {
+        "lt": "Švelnus imbieras, traiškyti obuoliai, šiek tiek citrusinių vaisių, „brioche“ kepinių užuominos",
+        "en": "Gentle ginger, crushed apple, a little citrus, hints of brioche"
+      },
+      "palate": {
+        "lt": "Įvairiapusėje skonių gamoje išsiskiria ryškūs obuolių potėpiai, medus ir geltonieji vaisiai. Vaisiškumas persipina su kremiškumu ir minerališkumu.",
+        "en": "A layered palate of bright apple, honey and yellow fruit, woven with creaminess and minerality."
+      },
+      "notes": {
+        "lt": "Gaminamas iš 2020 m. derliaus (65 %), likusi dalis – senesnių metų rezerviniai vynai (vin de réserve). Beveik šešerius metus brandinamas ant mielių, todėl yra švelnios rūgšties, kremiškas ir šviežias.",
+        "en": "Made from the 2020 harvest (65%), with older reserve wines (vin de réserve) for the rest. Nearly six years on the lees give soft acidity, creaminess and freshness."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,0",
+          "en": "Vivino – 4.0"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 12,
+          "image": ""
+        }
+      ],
+      "image": "moutardier-carte-d-or.jpg",
+      "price": null
+    },
+    {
+      "slug": "jean-moutardier-selection-brut",
+      "name": "Jean Moutardier Cuvée Sélection Brut",
+      "category": "sparkling",
+      "producer": "jean-moutardier",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Šampanė",
+        "en": "Champagne"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Šampanas, baltas sausas",
+        "en": "Champagne, white, dry"
+      },
+      "composition": {
+        "lt": "Chardonnay (70 %), Pinot Noir (30 %)",
+        "en": "Chardonnay (70%), Pinot Noir (30%)"
+      },
+      "colour": {
+        "lt": "Geltono aukso su citrinos atspalviais",
+        "en": "Yellow gold with lemon tints"
+      },
+      "aroma": {
+        "lt": "Pirmiausia – skrudinti ananasai, bergamotė; prasivėdinus atsiskleidžia liepžiedžių ir persikų aromatai",
+        "en": "First toasted pineapple and bergamot; with air, linden blossom and peach"
+      },
+      "palate": {
+        "lt": "Gaivus ir kremiškas. Nokūs obuoliai ir citrusiniai vaisiai. Ilgas, mineralinis poskonis su gaivos, pipirų ir anyžių akcentais",
+        "en": "Fresh and creamy. Ripe apple and citrus. A long, mineral finish with freshness, pepper and anise"
+      },
+      "notes": {
+        "lt": "Puikios struktūros ir balanso šampanas su švelniais burbuliukais. Gamybai naudojami 400 ąžuolo statinėse brandinti vynai, todėl aromatai subtilesni ir įvairiapusiški, o skonis ir poskonis intensyvūs.",
+        "en": "Fine structure and balance, with soft bubbles. Made with wines aged in 400 oak barrels, giving subtler, more layered aromas and an intense palate and finish."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,0",
+          "en": "Vivino – 4.0"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 12,
+          "image": ""
+        }
+      ],
+      "image": "moutardier-selection.jpg",
+      "price": null
+    },
+    {
+      "slug": "jean-moutardier-millesime-2013-brut",
+      "name": "Jean Moutardier Cuvée Millésime 2013 Brut",
+      "category": "sparkling",
+      "producer": "jean-moutardier",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Šampanė",
+        "en": "Champagne"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Šampanas, baltas sausas",
+        "en": "Champagne, white, dry"
+      },
+      "composition": {
+        "lt": "Meunier (80 %), Chardonnay (20 %)",
+        "en": "Meunier (80%), Chardonnay (20%)"
+      },
+      "colour": {
+        "lt": "Šviesiai geltono šiaudų atspalvio su aukso atspindžiais",
+        "en": "Pale straw yellow with golden glints"
+      },
+      "aroma": {
+        "lt": "Medus, skrudinti skrebučiai, lauro lapai ir figos; lengvas minerališkumas",
+        "en": "Honey, toast, bay leaf and fig; light minerality"
+      },
+      "palate": {
+        "lt": "Daug tropinių vaisių, tamsios slyvos ir gervuogės. Skonį praturtina lengva, subtili ir gaivi rūgštis su citrinų ir vyšnių niuansais",
+        "en": "Plenty of tropical fruit, dark plum and blackberry, lifted by light, fresh acidity with lemon and cherry"
+      },
+      "notes": {
+        "lt": "Vertinamas dėl kreminės struktūros, švelnių burbuliukų ir traškumo. Puikiai subalansuotas, apvalaus skonio. Išskirtinai geras tų metų derlius; šampanas turi brandinimo potencialą.",
+        "en": "Prized for its creamy structure, fine bubbles and crispness. Well balanced and round. An excellent vintage, with potential to age."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,1",
+          "en": "Vivino – 4.1"
+        }
+      ],
+      "tags": [
+        "vintage"
+      ],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 12,
+          "image": ""
+        }
+      ],
+      "image": "moutardier-millesime-2013.jpg",
+      "price": null
+    },
+    {
+      "slug": "jean-moutardier-alchimie-millesime-2015-brut",
+      "name": "Jean Moutardier Alchimie Millésime 2015 Brut",
+      "category": "sparkling",
+      "producer": "jean-moutardier",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Šampanė",
+        "en": "Champagne"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Šampanas, baltas sausas",
+        "en": "Champagne, white, dry"
+      },
+      "composition": {
+        "lt": "Meunier (90 %), Pinot Noir (10 %)",
+        "en": "Meunier (90%), Pinot Noir (10%)"
+      },
+      "colour": {
+        "lt": "Gilios aukso spalvos su ryškiais, žaismingais burbuliukais",
+        "en": "Deep gold with lively bubbles"
+      },
+      "aroma": {
+        "lt": "Vanilinis kremas, kepti obuoliai ir migdolai, abrikosai, medus",
+        "en": "Vanilla cream, baked apple and almond, apricot, honey"
+      },
+      "palate": {
+        "lt": "Gaivumas, sūrus jodas ir ilgai išliekantys egzotiniai vaisiai. Sodrumas ir kreidos minerališkumas",
+        "en": "Freshness, salty iodine and long-lasting exotic fruit. Richness and chalky minerality"
+      },
+      "notes": {
+        "lt": "Galingas vintažas, pasižymintis giliu skoniu ir aromatų įvairove, vertinamas dėl sviestiškumo ir skrebučių pojūčio. Visi šampanui naudojami vynai brandinti ąžuolo bačkose. Riboto leidimo – išpilstyti vos 2 337 buteliai, todėl ypač vertinamas kolekcininkų.",
+        "en": "A powerful vintage with depth and a wide range of aromas, prized for its buttery, toasty character. All the base wines are aged in oak. A limited release of just 2,337 bottles, sought after by collectors."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,1",
+          "en": "Vivino – 4.1"
+        }
+      ],
+      "tags": [
+        "vintage",
+        "limited"
+      ],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 12.5,
+          "image": ""
+        }
+      ],
+      "image": "moutardier-alchimie-2015.jpg",
+      "price": null
+    },
+    {
+      "slug": "soligo-prosecco-doc-treviso-brut",
+      "name": "Soligo Prosecco DOC Treviso Brut",
+      "category": "sparkling",
+      "producer": "soligo",
+      "status": "active",
+      "featured": true,
+      "country": {
+        "lt": "Italija",
+        "en": "Italy"
+      },
+      "region": {
+        "lt": "Treviso",
+        "en": "Treviso"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Putojantis, baltas sausas",
+        "en": "Sparkling, white, dry"
+      },
+      "composition": {
+        "lt": "Glera",
+        "en": "Glera"
+      },
+      "colour": {
+        "lt": "Geltona su žalsvais blyksniais",
+        "en": "Yellow with green flashes"
+      },
+      "aroma": {
+        "lt": "Lazdyno riešutai, migdolai, akacijų ir lelijų aromatai",
+        "en": "Hazelnut and almond, with acacia and lily"
+      },
+      "palate": {
+        "lt": "Malonus, harmoningas, gaivios rūgšties; obuoliai, kriaušės, persikų užuominos ir citrusiniai vaisiai",
+        "en": "Pleasant and harmonious, with fresh acidity; apple, pear, a hint of peach and citrus"
+      },
+      "notes": {
+        "lt": "Vaisiškas, elegantiškų burbuliukų putojantis vynas, puikiai tinkantis prie gaivių lengvų salotų, makaronų, baltos žuvies patiekalų arba kaip aperityvas.",
+        "en": "A fruity sparkling wine with elegant bubbles, for light salads, pasta and white fish, or as an aperitif."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Gilbert & Gaillard 2021 – aukso medalis",
+          "en": "Gilbert & Gaillard 2021 – Gold medal"
+        },
+        {
+          "lt": "Vivino – 4,0",
+          "en": "Vivino – 4.0"
+        },
+        {
+          "lt": "IWC 2022 – sidabro medalis",
+          "en": "IWC 2022 – Silver medal"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 11,
+          "image": ""
+        }
+      ],
+      "image": "soligo-prosecco-brut.jpg",
+      "price": null
+    },
+    {
+      "slug": "soligo-prosecco-doc-treviso-extra-dry",
+      "name": "Soligo Prosecco DOC Treviso Extra Dry",
+      "category": "sparkling",
+      "producer": "soligo",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Italija",
+        "en": "Italy"
+      },
+      "region": {
+        "lt": "Treviso",
+        "en": "Treviso"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Putojantis, baltas sausas",
+        "en": "Sparkling, white, dry"
+      },
+      "composition": {
+        "lt": "Glera",
+        "en": "Glera"
+      },
+      "colour": {
+        "lt": "Geltona su žalsvais blyksniais",
+        "en": "Yellow with green flashes"
+      },
+      "aroma": {
+        "lt": "Geltonosios kriaušės, „Golden“ obuoliai, levandų ir paparčių užuominos",
+        "en": "Yellow pear, Golden Delicious apple, hints of lavender and fern"
+      },
+      "palate": {
+        "lt": "Švelnus ir subalansuotas, su švelniais citrusinių vaisių potėpiais",
+        "en": "Soft and balanced, with gentle citrus"
+      },
+      "notes": {
+        "lt": "Dėl sodraus, koncentruoto skonio pasižymi ilgesniu nei įprasta šiai rūšiai poskoniu, kuris suteikia prabangos ir elegancijos. Tiks ne tik prie tradicinių patiekalų, bet ir prie gausiai pasūdyto kepto jūros ešerio ar vytinto kumpio.",
+        "en": "Its rich, concentrated palate gives a longer finish than usual for the style, with a sense of luxury and elegance. Beyond the classic pairings, try it with well-salted roast sea bass or cured ham."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Berliner Wein Trophy 2025 – aukso medalis",
+          "en": "Berliner Wein Trophy 2025 – Gold medal"
+        },
+        {
+          "lt": "Falstaff Trophy Prosecco 2023 – 91 balas",
+          "en": "Falstaff Trophy Prosecco 2023 – 91 points"
+        },
+        {
+          "lt": "The Prosecco Masters 2022 – aukso medalis",
+          "en": "The Prosecco Masters 2022 – Gold medal"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 11,
+          "image": ""
+        }
+      ],
+      "image": "soligo-prosecco-extra-dry.jpg",
+      "price": null
+    },
+    {
+      "slug": "tresors-de-loire-cremant-brut",
+      "name": "Trésors de Loire Crémant de Loire Brut AOC",
+      "category": "sparkling",
+      "producer": "joseph-verdier",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Luara, Anžu",
+        "en": "Loire, Anjou"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Putojantis, baltas sausas",
+        "en": "Sparkling, white, dry"
+      },
+      "composition": {
+        "lt": "Chenin, Chardonnay, Cabernet Franc",
+        "en": "Chenin, Chardonnay, Cabernet Franc"
+      },
+      "colour": {
+        "lt": "Šviesiai auksinė",
+        "en": "Pale gold"
+      },
+      "aroma": {
+        "lt": "Gaivios gėlės, citrusiniai vaisiai, „brioche“ bandelė, kaulavaisiai, vanilė",
+        "en": "Fresh flowers, citrus, brioche, stone fruit, vanilla"
+      },
+      "palate": {
+        "lt": "Žaliasis obuolys, kriaušės, citrusiniai vaisiai",
+        "en": "Green apple, pear, citrus"
+      },
+      "notes": {
+        "lt": "Kreminės ir švelnios tekstūros putojantis vynas su ilgai išliekančiu, aiškiu mineraliniu poskoniu. Gaivios rūgšties, subalansuotas, švelnių burbuliukų. Mažiausiai 18 mėnesių brandinamas ant mielių, kurios suteikia kreminę tekstūrą. Tinka kaip aperityvas, dera prie žuvies ir jūros gėrybių.",
+        "en": "Creamy and smooth, with a long, clear mineral finish. Fresh acidity, balance and fine bubbles. At least 18 months on the lees give the creamy texture. An aperitif, or with fish and seafood."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,0",
+          "en": "Vivino – 4.0"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 11.5,
+          "image": ""
+        }
+      ],
+      "image": "tresors-de-loire-cremant-brut.jpg",
+      "price": null
+    },
+    {
+      "slug": "tresors-de-loire-cremant-rose-brut",
+      "name": "Trésors de Loire Crémant de Loire Rosé Brut AOC",
+      "category": "sparkling",
+      "producer": "joseph-verdier",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Luara, Anžu",
+        "en": "Loire, Anjou"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Putojantis, rožinis sausas",
+        "en": "Sparkling, rosé, dry"
+      },
+      "composition": {
+        "lt": "Cabernet Franc, Grolleau Gris",
+        "en": "Cabernet Franc, Grolleau Gris"
+      },
+      "colour": {
+        "lt": "Šviesiai rožinė",
+        "en": "Pale pink"
+      },
+      "aroma": {
+        "lt": "Raudonieji vaisiai, traiškytos šviežios braškės, švelnios krapų ir peletrūno užuominos",
+        "en": "Red fruit, crushed fresh strawberry, soft hints of dill and tarragon"
+      },
+      "palate": {
+        "lt": "Puikus vaisių ir gaivos balansas, su citrinų užuominomis poskonyje",
+        "en": "A fine balance of fruit and freshness, with lemon on the finish"
+      },
+      "notes": {
+        "lt": "Kreminės ir švelnios tekstūros putojantis vynas su ypač švelniais burbuliukais; ryškiai jaučiamos braškės ir gaiva. Gaminamas tradiciniu (antrinės fermentacijos butelyje) metodu. Tiks prie jūros gėrybių ar lengvų, ne per saldžių desertų.",
+        "en": "Creamy and smooth with very fine bubbles, and clear strawberry and freshness. Made by the traditional method, with a second fermentation in bottle. With seafood or light, not-too-sweet desserts."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Vivino – 4,0",
+          "en": "Vivino – 4.0"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 11.5,
+          "image": ""
+        }
+      ],
+      "image": "tresors-de-loire-cremant-rose.jpg",
+      "price": null
+    },
+    {
+      "slug": "castell-de-sant-pau-cava-brut",
+      "name": "Castell de Sant Pau Cava Brut",
+      "category": "sparkling",
+      "producer": "castell-de-sant-pau",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Ispanija",
+        "en": "Spain"
+      },
+      "region": {
+        "lt": "Penedès, Katalonija",
+        "en": "Penedès, Catalonia"
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Putojantis, baltas sausas",
+        "en": "Sparkling, white, dry"
+      },
+      "composition": {
+        "lt": "Xarel·lo (40 %), Macabeo (30 %), Parellada (30 %)",
+        "en": "Xarel·lo (40%), Macabeo (30%), Parellada (30%)"
+      },
+      "colour": {
+        "lt": "Šviesių šiaudų geltonumo",
+        "en": "Pale straw yellow"
+      },
+      "aroma": {
+        "lt": "Rafinuotas vaisių aromatas, kepiniai („brioche“), lengvos citrinos ir laimo užuominos",
+        "en": "Refined fruit, brioche, light hints of lemon and lime"
+      },
+      "palate": {
+        "lt": "Prinokę geltonieji vaisiai, džiovinti abrikosai, gaivi subtili rūgštis, švarus ilgas poskonis",
+        "en": "Ripe yellow fruit, dried apricot, fresh and delicate acidity, a clean, long finish"
+      },
+      "notes": {
+        "lt": "Gaminama šalto ir švelnaus misos spaudimo būdu, 6 mėnesius fermentuojant su nuosėdomis. Vėliau 24 mėnesius brandinama butelyje – ilgiau nei reikalauja reglamentai, todėl ši cava yra kreminės tekstūros ir gilesnio skonio nei analogiškos.",
+        "en": "Made with cold, gentle pressing and six months' fermentation on the lees, then 24 months in bottle, longer than the rules require. The result is creamier and deeper than comparable cavas."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [
+        {
+          "lt": "Wine Enthusiast 2022 – Best Buy",
+          "en": "Wine Enthusiast 2022 – Best Buy"
+        },
+        {
+          "lt": "Wine Enthusiast 2022 – 90 balų",
+          "en": "Wine Enthusiast 2022 – 90 points"
+        }
+      ],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.75,
+          "abv": 11.5,
+          "image": ""
+        }
+      ],
+      "image": "castell-de-sant-pau-cava-brut.jpg",
+      "price": null
+    },
+    {
+      "slug": "kinahans-cask-project-ll",
+      "name": "Kinahan's Cask Project LL",
+      "category": "whisky",
+      "producer": "kinahans",
+      "status": "active",
+      "featured": true,
+      "country": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Maišytas viskis",
+        "en": "Blended whiskey"
+      },
+      "composition": {
+        "lt": "Grūdai, salyklo miežiai",
+        "en": "Grain, malted barley"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Muskato riešutas, cinamonas, vanilė, šviežios kriaušės",
+        "en": "Nutmeg, cinnamon, vanilla, fresh pear"
+      },
+      "palate": {
+        "lt": "Karamelizuoti mangai ir tropiniai vaisiai, saulėje džiovintų razinų ir figų potėpiai",
+        "en": "Caramelised mango and tropical fruit, with sun-dried raisin and fig"
+      },
+      "notes": {
+        "lt": "Švelniam ir aromatingam viskiui naudojamos įvairios grūdinės kultūros, įskaitant salyklo miežius. Distiliatas brandinamas specialioje hibridinėje bačkoje iš skirtingų medžių lentelių (amerikietiško, prancūziško ąžuolo ir kt.), kurios suteikia viskiui išskirtinumo ir plačią skonių paletę.",
+        "en": "A smooth, aromatic whiskey from several grains including malted barley. It matures in a hybrid cask built from staves of different woods (American and French oak, among others), which gives it a distinctive, wide range of flavours."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        },
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": "kinahans-cask-project-ll-box.jpg"
+        },
+        {
+          "label": {
+            "lt": "Su metaliniu supamuoju stovu",
+            "en": "With metal swing cradle"
+          },
+          "volume": 4.5,
+          "abv": 40,
+          "image": "kinahans-cask-project-ll-cradle.jpg"
+        }
+      ],
+      "image": "kinahans-cask-project-ll.jpg",
+      "price": null
+    },
+    {
+      "slug": "kinahans-cask-project-b",
+      "name": "Kinahan's Cask Project B",
+      "category": "whisky",
+      "producer": "kinahans",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Maišytas viskis",
+        "en": "Blended whiskey"
+      },
+      "composition": {
+        "lt": "Grūdai, salyklo miežiai",
+        "en": "Grain, malted barley"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Karamelizuoti tropiniai vaisiai, raudonosios slyvos ir obuoliai",
+        "en": "Caramelised tropical fruit, red plum and apple"
+      },
+      "palate": {
+        "lt": "Saulėje džiovintos figos ir razinos, šokolado ir karamelės užuominos, lengvi prinokusio mango potėpiai",
+        "en": "Sun-dried fig and raisin, hints of chocolate and caramel, a touch of ripe mango"
+      },
+      "notes": {
+        "lt": "Gaminamas iš įvairių grūdinių kultūrų, įskaitant salyklo miežius. Nefiltruotas, todėl turtingas skonių ir aromatų. Brandinamas unikalioje hibridinėje bačkoje iš amerikietiško, prancūziško, vengriško, portugališko ąžuolo ir kaštono lentelių.",
+        "en": "Made from several grains including malted barley. Unfiltered, so rich in flavour and aroma. Matured in a unique hybrid cask of American, French, Hungarian and Portuguese oak with chestnut."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 43,
+          "image": ""
+        }
+      ],
+      "image": "kinahans-cask-project-b.jpg",
+      "price": null
+    },
+    {
+      "slug": "kinahans-small-batch",
+      "name": "Kinahan's Irish Whiskey Small Batch",
+      "category": "whisky",
+      "producer": "kinahans",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Maišytas viskis",
+        "en": "Blended whiskey"
+      },
+      "composition": {
+        "lt": "Grūdai (80 %), salyklo miežiai (20 %)",
+        "en": "Grain (80%), malted barley (20%)"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Raudonieji obuoliai, prinokę persikai, kepti migdolai, lengvos karamelės ir saldaus kremo užuominos",
+        "en": "Red apple, ripe peach, roasted almond, light caramel and sweet cream"
+      },
+      "palate": {
+        "lt": "Aliejinės tekstūros; daugiau vanilės, apelsinų ir citrinų žievelės, mažiau – juodojo šokolado ir lengvos mėtos",
+        "en": "Oily texture; vanilla and orange and lemon peel lead, with some dark chocolate and light mint"
+      },
+      "notes": {
+        "lt": "Riboto leidimo viskis – subtilus, gerai subalansuotas, kompleksiško charakterio, su airišku švelnumu. Šaltai nefiltruotas, kad išsaugotų kuo daugiau skonio savybių. Mažiausiai šešerius metus brandinamas mažose pirmojo ir antrojo pylimo burbono statinėse.",
+        "en": "A limited release: subtle, well balanced and complex, with Irish smoothness. Non-chill-filtered to keep as much flavour as possible. Aged at least six years in small first- and second-fill bourbon casks."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [
+        "limited"
+      ],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 46,
+          "image": ""
+        }
+      ],
+      "image": "kinahans-small-batch.jpg",
+      "price": null
+    },
+    {
+      "slug": "kinahans-quadrat-cask-single-malt-04",
+      "name": "Kinahan's Quadrat Cask Single Malt Release #04",
+      "category": "whisky",
+      "producer": "kinahans",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Salyklinis viskis, statinės stiprumo",
+        "en": "Single malt, cask strength"
+      },
+      "composition": {
+        "lt": "Salyklo miežiai",
+        "en": "Malted barley"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Tamsios slyvos, karamelizuoti vaisiai, irisai (toffee), sūrios Viduržemio jūros žolelės, subtili vanilė",
+        "en": "Dark plum, caramelised fruit, toffee, salty Mediterranean herbs, delicate vanilla"
+      },
+      "palate": {
+        "lt": "Aliejinės tekstūros; dominuoja sūrstelėjusi „Madeira“, karamelizuotas mangas, mažiau – juodasis šokoladas, skrudintas ąžuolas, cukranendrės. Ilgas, intensyvus ir šildantis poskonis",
+        "en": "Oily; salty Madeira and caramelised mango lead, with some dark chocolate, toasted oak and cane sugar. A long, intense, warming finish"
+      },
+      "notes": {
+        "lt": "Riboto leidimo, kolekcinės vertės viskis (išleista vos 1 300 butelių). Natūralios spalvos ir šaltai nefiltruotas. Sudarytas iš keturių komponentų, atskirai brandintų „Madeira“, „Merlot“, „Tawny Port“ vyno ir kaštono medienos bačkose. Gamintojas neatskleidžia nei proporcijų, nei komponentų amžiaus. Ekspertai rekomenduoja įlašinti porą lašų vandens, kad atsivertų visi aromatai.",
+        "en": "A limited, collectable release of just 1,300 bottles. Natural colour, non-chill-filtered. Four components, each matured separately in Madeira, Merlot, tawny port and chestnut casks, then married. The producer discloses neither the proportions nor the ages. Experts suggest a few drops of water to open it up."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [
+        "limited",
+        "cask-strength"
+      ],
+      "formats": [
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 54,
+          "image": ""
+        }
+      ],
+      "image": "kinahans-quadrat-cask.jpg",
+      "price": null
+    },
+    {
+      "slug": "bagots-grain-game",
+      "name": "Bagots Grain Game",
+      "category": "whisky",
+      "producer": "bagots",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Maišytas viskis",
+        "en": "Blended whiskey"
+      },
+      "composition": {
+        "lt": "Salyklo miežiai, grūdai, kukurūzai",
+        "en": "Malted barley, grain, corn"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Vanilė, sausas dūmas, obuoliai, smilkalai",
+        "en": "Vanilla, dry smoke, apple, incense"
+      },
+      "palate": {
+        "lt": "Šiek tiek kakavos su slyvų ir kriaušių potėpiais; migdolų ir mėtų niuansai",
+        "en": "A little cocoa with plum and pear; notes of almond and mint"
+      },
+      "notes": {
+        "lt": "Maišytas viskis, brandintas trijose skirtingose bačkose: amerikietiško ąžuolo, amerikietiško baltojo ąžuolo ir „Madeira“ vyno. Išpilstomas be šaltosios filtracijos, todėl skonis išlieka autentiškas ir natūralus, su ilgu, neįkyriai salstelėjusiu poskoniu.",
+        "en": "A blend matured in three casks: American oak, American white oak and Madeira. Bottled without chill filtration, so it stays authentic and natural, with a long, gently sweet finish."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        }
+      ],
+      "image": "bagots-grain-game.jpg",
+      "price": null
+    },
+    {
+      "slug": "bagots-triple-batch",
+      "name": "Bagots Triple Batch",
+      "category": "whisky",
+      "producer": "bagots",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Maišytas viskis",
+        "en": "Blended whiskey"
+      },
+      "composition": {
+        "lt": "Salyklo miežiai, grūdai",
+        "en": "Malted barley, grain"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Ryškus ir gaivus, su vanilės ir citrusinių vaisių natomis",
+        "en": "Bright and fresh, with vanilla and citrus"
+      },
+      "palate": {
+        "lt": "Rytietiški prieskoniai, saldūs melionai ir saulėje džiovinti tropiniai vaisiai",
+        "en": "Eastern spice, sweet melon and sun-dried tropical fruit"
+      },
+      "notes": {
+        "lt": "Maišytas viskis, kurio dalys brandintos trijose skirtingose bačkose: burbono, „Madeira“ vyno ir naujo amerikietiško ąžuolo. Amerikietiškas ąžuolas suteikia klasikinio viskio skonį, kitos bačkos – šiek tiek salstelėjimo. Brandintas mažiausiai trejus metus.",
+        "en": "A blend whose parts mature in three casks: bourbon, Madeira and new American oak. The American oak gives classic whiskey flavour, the others a touch of sweetness. Aged at least three years."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 43,
+          "image": ""
+        }
+      ],
+      "image": "bagots-triple-batch.jpg",
+      "price": null
+    },
+    {
+      "slug": "bagots-single-malt",
+      "name": "Bagots Single Malt",
+      "category": "whisky",
+      "producer": "bagots",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Salyklinis viskis",
+        "en": "Single malt"
+      },
+      "composition": {
+        "lt": "Salyklo miežiai",
+        "en": "Malted barley"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Kriaušės, slyvos, tabakas ir citrusiniai vaisiai, elegantiškos hiacintų ir narcizų natos, šafranas",
+        "en": "Pear, plum, tobacco and citrus, elegant hyacinth and daffodil, saffron"
+      },
+      "palate": {
+        "lt": "Dominuoja raudonajame vyne virtos kriaušės, mažiau – migdolai, anakardžiai, pipirai. Gilus, švelnios tekstūros",
+        "en": "Pears poached in red wine lead, with some almond, cashew and pepper. Deep, with a soft texture"
+      },
+      "notes": {
+        "lt": "Vieno salyklo viskis, ne mažiau kaip šešerius metus brandintas įvairiose europietiško ąžuolo statinėse. Pilno kūno, ilgo ir brandaus poskonio, šaltai nefiltruotas, todėl išsaugojęs daug skonio atspalvių. Tinka gerti gryną arba su ledukais.",
+        "en": "A single malt aged at least six years in various European oak casks. Full-bodied with a long, mature finish; non-chill-filtered, so it keeps many shades of flavour. Neat or on ice."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 43,
+          "image": ""
+        }
+      ],
+      "image": "bagots-single-malt.jpg",
+      "price": null
+    },
+    {
+      "slug": "bagots-lr-madeira-cask-single-malt",
+      "name": "Bagots L&R Madeira Cask Single Malt",
+      "category": "whisky",
+      "producer": "bagots",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija",
+        "en": "Ireland"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Salyklinis viskis, statinės stiprumo",
+        "en": "Single malt, cask strength"
+      },
+      "composition": {
+        "lt": "Salyklo miežiai",
+        "en": "Malted barley"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Kreminė kava, tiršta karamelė, skrudinti riešutai, džiovinti vaisiai, salyklo ir ąžuolo užuominos",
+        "en": "Creamy coffee, thick caramel, roasted nuts, dried fruit, hints of malt and oak"
+      },
+      "palate": {
+        "lt": "Gilus ir sodrus; saldi riešutų ir džiovintų vaisių įtaka iš „Madeira“ statinės, kurią sušvelnina airiškiems salykliniams viskiams būdingas kremiškumas. Ilgas, subalansuotas, prieskoningas ir salyklinis poskonis",
+        "en": "Deep and rich; sweet nuts and dried fruit from the Madeira cask, softened by the creaminess typical of Irish malts. A long, balanced, spicy and malty finish"
+      },
+      "notes": {
+        "lt": "Riboto leidimo, kolekcinės vertės viskis (išleista vos 300 butelių). Natūralios spalvos, šaltai nefiltruotas, brandintas „Madeira“ vyno statinėse. Gamintojas brandinimo amžiaus ir kitų technologinių detalių neatskleidžia. Ekspertai rekomenduoja įlašinti porą lašų vandens.",
+        "en": "A limited, collectable release of just 300 bottles. Natural colour, non-chill-filtered, matured in Madeira casks. The producer does not disclose the age or other technical details. Experts suggest a few drops of water."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [
+        "limited",
+        "cask-strength"
+      ],
+      "formats": [
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 55,
+          "image": ""
+        }
+      ],
+      "image": "bagots-lr-madeira-cask.jpg",
+      "price": null
+    },
+    {
+      "slug": "yakusun-whisky-classic",
+      "name": "Yakusun Whisky Classic",
+      "category": "whisky",
+      "producer": "yakusun",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija, Japonija",
+        "en": "Ireland, Japan"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Maišytas viskis",
+        "en": "Blended whisky"
+      },
+      "composition": {
+        "lt": "Grūdai, salyklo miežiai",
+        "en": "Grain, malted barley"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Dominuoja vanilė ir irisai (toffee), skrudintos duonos ir vaisių užuominos",
+        "en": "Vanilla and toffee lead, with hints of toast and fruit"
+      },
+      "palate": {
+        "lt": "Puikiai subalansuotas, su ryškiais medaus, vanilės ir kremiškumo akcentais. Poskonyje – švelnūs prieskoniai, skrudinta duona, džiovinta mediena",
+        "en": "Well balanced, with bright honey, vanilla and creaminess. Gentle spice, toast and dried wood on the finish"
+      },
+      "notes": {
+        "lt": "Maišomi aukštos kokybės airiško ir japoniško viskio distiliatai, brandinti skirtingose bačkose: airiškas (mažiausiai 3 metus) – burbono ir raudonojo vyno, japoniškas – pirmojo ir antrojo pylimo burbono. Tai suteikia viskiui aromatų įvairovės, rafinuotumo, glotnumo ir balanso.",
+        "en": "A blend of quality Irish and Japanese whiskies matured in different casks: the Irish (at least three years) in bourbon and red wine, the Japanese in first- and second-fill bourbon. This brings range, refinement, smoothness and balance."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        }
+      ],
+      "image": "yakusun-whisky-classic.jpg",
+      "price": null
+    },
+    {
+      "slug": "naud-vs",
+      "name": "Naud VS",
+      "category": "cognac",
+      "producer": "naud",
+      "status": "active",
+      "featured": true,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Konjakas",
+        "en": "Cognac"
+      },
+      "origin": {
+        "lt": "Bons Bois, Petite Champagne",
+        "en": "Bons Bois, Petite Champagne"
+      },
+      "style": {
+        "lt": "Konjakas, VS",
+        "en": "Cognac, VS"
+      },
+      "composition": {
+        "lt": "Ugni Blanc, Colombard",
+        "en": "Ugni Blanc, Colombard"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Švieži vaisiai, lauko gėlės, cinamonas, migdolai, kriaušės, persikai",
+        "en": "Fresh fruit, wildflowers, cinnamon, almond, pear, peach"
+      },
+      "palate": {
+        "lt": "Gaivus, išraiškingas ir gerai subalansuotas, su medaus, vanilės, persikų ir kriaušių natomis",
+        "en": "Fresh, expressive and well balanced, with honey, vanilla, peach and pear"
+      },
+      "notes": {
+        "lt": "Gaminamas iš Ugni Blanc ir Colombard vynuogių, užaugintų Bons Bois ir Petite Champagne kru. Mažiausiai dvejus metus brandinamas naujose 350–400 litrų ąžuolo statinėse ir dar metus didesnėse statinėse, kurios suteikia distiliatui traškumo ir subtilumo.",
+        "en": "Made from Ugni Blanc and Colombard grown in the Bons Bois and Petite Champagne crus. At least two years in new 350–400 litre oak casks, then a further year in larger casks for crispness and finesse."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        },
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": "naud-vs-tube.jpg"
+        }
+      ],
+      "image": "naud-vs.jpg",
+      "price": null
+    },
+    {
+      "slug": "naud-vsop",
+      "name": "Naud VSOP",
+      "category": "cognac",
+      "producer": "naud",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Konjakas",
+        "en": "Cognac"
+      },
+      "origin": {
+        "lt": "Fins Bois, Bons Bois, Petite Champagne",
+        "en": "Fins Bois, Bons Bois, Petite Champagne"
+      },
+      "style": {
+        "lt": "Konjakas, VSOP",
+        "en": "Cognac, VSOP"
+      },
+      "composition": {
+        "lt": "Ugni Blanc, Colombard",
+        "en": "Ugni Blanc, Colombard"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Vanilė, džiovinti vaisiai, muskato riešutas, cinamonas; brandos akcentai – skrudinti migdolai, oda, ąžuolas",
+        "en": "Vanilla, dried fruit, nutmeg, cinnamon; with age come roasted almond, leather and oak"
+      },
+      "palate": {
+        "lt": "Vaisiškas – apelsinų ir persikų potėpiai, šiek tiek džiovintų vaisių ir riešutų, vanilės poskonis",
+        "en": "Fruity, with orange and peach, a little dried fruit and nut, and a vanilla finish"
+      },
+      "notes": {
+        "lt": "Gaminamas iš Ugni Blanc ir Colombard vynuogių, užaugintų Fins Bois, Bons Bois ir Petite Champagne kru. Po dvigubos distiliacijos brandinamas mažose ąžuolo statinėse, kad įgautų turtingesnį aromatą ir skonį, būtų subalansuotas ir švelnus.",
+        "en": "Made from Ugni Blanc and Colombard grown in the Fins Bois, Bons Bois and Petite Champagne crus. After double distillation it ages in small oak casks for a richer aroma and palate, balance and smoothness."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        },
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": "naud-vsop-tube.jpg"
+        }
+      ],
+      "image": "naud-vsop.jpg",
+      "price": null
+    },
+    {
+      "slug": "naud-xo",
+      "name": "Naud XO",
+      "category": "cognac",
+      "producer": "naud",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Prancūzija",
+        "en": "France"
+      },
+      "region": {
+        "lt": "Konjakas",
+        "en": "Cognac"
+      },
+      "origin": {
+        "lt": "Fins Bois, Bons Bois, Petite Champagne, Grande Champagne",
+        "en": "Fins Bois, Bons Bois, Petite Champagne, Grande Champagne"
+      },
+      "style": {
+        "lt": "Konjakas, XO",
+        "en": "Cognac, XO"
+      },
+      "composition": {
+        "lt": "Ugni Blanc",
+        "en": "Ugni Blanc"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Tabakas ir oda, cinamonas, džiovintos slyvos",
+        "en": "Tobacco and leather, cinnamon, prunes"
+      },
+      "palate": {
+        "lt": "Harmoningas ir turtingas, ilgo poskonio. Dominuoja tabakas, džiovinti vaisiai ir cukruoti apelsinai",
+        "en": "Harmonious and rich, with a long finish. Tobacco, dried fruit and candied orange"
+      },
+      "notes": {
+        "lt": "Gaminamas iš Ugni Blanc vynuogių iš labiausiai vertinamų kru: Grande Champagne suteikia kompleksiškumo ir elegancijos, Petite Champagne – struktūros ir aromato intensyvumo. Brandinamas mažose statinėse nuo 10 iki 12 metų.",
+        "en": "Made from Ugni Blanc from the most prized crus: Grande Champagne brings complexity and elegance, Petite Champagne structure and aromatic intensity. Aged 10 to 12 years in small casks."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        },
+        {
+          "label": {
+            "lt": "Su dėžute ir dviem taurėmis",
+            "en": "Gift box with two glasses"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": "naud-xo-glasses.jpg"
+        }
+      ],
+      "image": "naud-xo.jpg",
+      "price": null
+    },
+    {
+      "slug": "naud-ron-colombia-10",
+      "name": "Naud Ron Colombia 10 YO",
+      "category": "rum",
+      "producer": "naud",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Kolumbija",
+        "en": "Colombia"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "Kolumbija, brandinta ir Prancūzijoje",
+        "en": "Colombia, finished in France"
+      },
+      "style": {
+        "lt": "Romas, 10 metų",
+        "en": "Rum, 10 years old"
+      },
+      "composition": {
+        "lt": "",
+        "en": ""
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Iš pradžių sodri kava ir kakava, vėliau – džiovinti mangai ir papajos, vanilė, karamelė",
+        "en": "First rich coffee and cocoa, then dried mango and papaya, vanilla and caramel"
+      },
+      "palate": {
+        "lt": "Švelnus ir gilus: irisai (toffee), karamelė, skrudinta mediena; egzotiniai kokoso ir džiovintų tropinių vaisių tonai",
+        "en": "Smooth and deep: toffee, caramel, toasted wood; exotic coconut and dried tropical fruit"
+      },
+      "notes": {
+        "lt": "Romas 10 metų brandinamas Kolumbijoje burbono statinėse, vėliau dar pusę metų – Naud rūsiuose Prancūzijoje. Todėl skonyje nėra perteklinio saldumo, o poskonyje išryškėja elegantiškas prieskonių aštrumas.",
+        "en": "Aged 10 years in bourbon casks in Colombia, then six months in the Naud cellars in France. So there is no excess sweetness, and the finish shows elegant spice."
+      },
+      "story": {
+        "lt": "Naud šeimos verslas garsėja ne tik konjakais, bet ir kruopščiai atrinktais Karibų regiono romais. Atvežti romai dar šešis mėnesius brandinami Naud konjako rūsiuose, kad įgautų daugiau skonių ir aromatų.",
+        "en": "The Naud family is known for cognac and also for carefully chosen Caribbean rums. Once in France, the rums spend another six months in the Naud cognac cellars to gain flavour and aroma."
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        }
+      ],
+      "image": "naud-ron-colombia-10.jpg",
+      "price": null
+    },
+    {
+      "slug": "naud-ron-venezuela-12",
+      "name": "Naud Ron Venezuela 12 YO",
+      "category": "rum",
+      "producer": "naud",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Venesuela",
+        "en": "Venezuela"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "Venesuela, brandinta ir Prancūzijoje",
+        "en": "Venezuela, finished in France"
+      },
+      "style": {
+        "lt": "Romas, 12 metų",
+        "en": "Rum, 12 years old"
+      },
+      "composition": {
+        "lt": "",
+        "en": ""
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Ąžuolo užuominos, kedras, kokosas, rudasis degintas ir muscovado cukrus, šviesi karamelė",
+        "en": "Hints of oak, cedar, coconut, burnt brown and muscovado sugar, light caramel"
+      },
+      "palate": {
+        "lt": "Švelnus ir struktūriškas: skrudinta kava, figų džemas. Aiškus, ilgas švelnių prieskonių poskonis",
+        "en": "Smooth and structured: roasted coffee, fig jam. A clear, long finish of gentle spice"
+      },
+      "notes": {
+        "lt": "Gaminamas legendinėje „Sofa“ distiliavimo gamykloje netoli Karakaso, kur šaltos ir sausos naktys sukuria idealias sąlygas brandinimui. 12 metų brandinamas burbono bačkose Venesueloje ir dar šešis mėnesius prancūziško ąžuolo statinėse Naud rūsiuose.",
+        "en": "Made at the legendary Sofa distillery near Caracas, where cool, dry nights suit ageing. Twelve years in ex-bourbon casks in Venezuela, then six months in French oak in the Naud cellars."
+      },
+      "story": {
+        "lt": "Naud šeimos verslas garsėja ne tik konjakais, bet ir kruopščiai atrinktais Karibų regiono romais. Atvežti romai dar šešis mėnesius brandinami Naud konjako rūsiuose, kad įgautų daugiau skonių ir aromatų.",
+        "en": "The Naud family is known for cognac and also for carefully chosen Caribbean rums. Once in France, the rums spend another six months in the Naud cognac cellars to gain flavour and aroma."
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        },
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": "naud-ron-venezuela-12-tube.jpg"
+        }
+      ],
+      "image": "naud-ron-venezuela-12.jpg",
+      "price": null
+    },
+    {
+      "slug": "naud-ron-panama-15",
+      "name": "Naud Ron Panama 15 YO",
+      "category": "rum",
+      "producer": "naud",
+      "status": "active",
+      "featured": true,
+      "country": {
+        "lt": "Panama",
+        "en": "Panama"
+      },
+      "region": {
+        "lt": "Herrera",
+        "en": "Herrera"
+      },
+      "origin": {
+        "lt": "Panama, brandinta ir Prancūzijoje",
+        "en": "Panama, finished in France"
+      },
+      "style": {
+        "lt": "Romas, 15 metų",
+        "en": "Rum, 15 years old"
+      },
+      "composition": {
+        "lt": "",
+        "en": ""
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Subtilūs šokolado ir vanilinio cukraus atspalviai, deginta karamelė ir kokosas",
+        "en": "Delicate chocolate and vanilla sugar, burnt caramel and coconut"
+      },
+      "palate": {
+        "lt": "Burbono statinės skoniai: vanilė, karamelė, rudasis cukrus, melasa, muskato riešutas",
+        "en": "The flavours of the bourbon cask: vanilla, caramel, brown sugar, molasses, nutmeg"
+      },
+      "notes": {
+        "lt": "Romas gimęs Panamos Herreros regione, kur cukranendrių auginimas turi šimtametes tradicijas, o tropinis klimatas puikiai brandina romus. 15 metų brandinamas burbono statinėse, o charakterio suteikia dar pusė metų prancūziško ąžuolo statinėse Naud rūsiuose.",
+        "en": "Born in the Herrera region of Panama, with a century-old tradition of growing sugar cane and a tropical climate that suits ageing. Fifteen years in bourbon casks, then six months in French oak in the Naud cellars for character."
+      },
+      "story": {
+        "lt": "Naud šeimos verslas garsėja ne tik konjakais, bet ir kruopščiai atrinktais Karibų regiono romais. Atvežti romai dar šešis mėnesius brandinami Naud konjako rūsiuose, kad įgautų daugiau skonių ir aromatų.",
+        "en": "The Naud family is known for cognac and also for carefully chosen Caribbean rums. Once in France, the rums spend another six months in the Naud cognac cellars to gain flavour and aroma."
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Su dėžute",
+            "en": "Gift box"
+          },
+          "volume": 0.7,
+          "abv": 40,
+          "image": ""
+        }
+      ],
+      "image": "naud-ron-panama-15.jpg",
+      "price": null
+    },
+    {
+      "slug": "yakusun-spirit-drink-yuzu",
+      "name": "Yakusun Spirit Drink Yuzu",
+      "category": "rum",
+      "producer": "yakusun",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija, Japonija",
+        "en": "Ireland, Japan"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Spiritinis gėrimas",
+        "en": "Spirit drink"
+      },
+      "composition": {
+        "lt": "Airiškas ir japoniškas viskis, juzu ekstraktas",
+        "en": "Irish and Japanese whisky, yuzu extract"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Dominuoja juzu, mandarinų ir citrinų žievelės natos; vanilė, irisai ir medienos aromatai",
+        "en": "Yuzu, mandarin and lemon peel lead; vanilla, toffee and wood"
+      },
+      "palate": {
+        "lt": "Subalansuotas, švelnus ir saldžiarūgštis; vanilė ir karamelė, papildytos salyklo ir rytietiškų prieskonių natomis",
+        "en": "Balanced, smooth and sweet-sour; vanilla and caramel with malt and eastern spice"
+      },
+      "notes": {
+        "lt": "Pagal unikalią receptūrą sumaišyti brandinti japoniško ir airiško viskio distiliatai pagardinami šviežių juzu vaisių ekstraktu. Puikiai tinka gaiviems kokteiliams („Gin & Tonic“, „Yuzu Martini“) arba gerti atšaldytą su ledukais.",
+        "en": "Aged Japanese and Irish whisky blended to a unique recipe and flavoured with fresh yuzu extract. For bright cocktails (a gin and tonic, a Yuzu Martini) or chilled over ice."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 35,
+          "image": ""
+        }
+      ],
+      "image": "yakusun-yuzu.jpg",
+      "price": null
+    },
+    {
+      "slug": "yakusun-spirit-drink-passion-fruit",
+      "name": "Yakusun Spirit Drink Passion Fruit",
+      "category": "rum",
+      "producer": "yakusun",
+      "status": "active",
+      "featured": false,
+      "country": {
+        "lt": "Airija, Japonija",
+        "en": "Ireland, Japan"
+      },
+      "region": {
+        "lt": "",
+        "en": ""
+      },
+      "origin": {
+        "lt": "",
+        "en": ""
+      },
+      "style": {
+        "lt": "Spiritinis gėrimas",
+        "en": "Spirit drink"
+      },
+      "composition": {
+        "lt": "Airiškas ir japoniškas viskis, pasiflorų ekstraktas",
+        "en": "Irish and Japanese whisky, passion fruit extract"
+      },
+      "colour": {
+        "lt": "",
+        "en": ""
+      },
+      "aroma": {
+        "lt": "Ryškus ir intensyvus: įvairūs pasiflorų atspalviai, tropiniai vaisiai ir deginta karamelė",
+        "en": "Bright and intense: passion fruit in many shades, tropical fruit and burnt caramel"
+      },
+      "palate": {
+        "lt": "Subalansuotas, švelnus ir saldžiarūgštis; vanilė, karamelė, ąžuolo natos. Ilgas, sodrus poskonis su ryškiais pasiflorais",
+        "en": "Balanced, smooth and sweet-sour; vanilla, caramel, oak. A long, rich finish of passion fruit"
+      },
+      "notes": {
+        "lt": "Pagal unikalią receptūrą sumaišyti brandinti japoniško ir airiško viskio distiliatai pagardinami šviežių pasiflorų vaisių ekstraktu. Tinka kokteiliams („Passion Fruit Martini“, „Passion Fruit Spritz“) arba gerti atšaldytą su ledukais.",
+        "en": "Aged Japanese and Irish whisky blended to a unique recipe and flavoured with fresh passion fruit extract. For cocktails (a Passion Fruit Martini or Spritz) or chilled over ice."
+      },
+      "story": {
+        "lt": "",
+        "en": ""
+      },
+      "awards": [],
+      "tags": [],
+      "formats": [
+        {
+          "label": {
+            "lt": "Butelis",
+            "en": "Bottle"
+          },
+          "volume": 0.7,
+          "abv": 35,
+          "image": ""
+        }
+      ],
+      "image": "yakusun-passion-fruit.jpg",
+      "price": null
+    }
+  ]
+}

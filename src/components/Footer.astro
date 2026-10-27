@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import logoName from '../assets/brand/logo-name.png';
+import logoMark from '../assets/brand/logo-mark.png';
+import { localePath, navHref, ui, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = ui[locale];
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="wordmark" href={localePath(locale, '/')}>
+          <Image
+            src={logoName}
+            alt="MILESIMA"
+            widths={[280, 560]}
+            sizes="200px"
+          />
+        </a>
+        <p class="footer-tagline">{t.footerTagline}</p>
+      </div>
+      <nav class="footer-nav" aria-label={t.menu}>
+        {t.nav.map((item) => (
+          <a href={navHref(locale, item.key)}>{item.label}</a>
+        ))}
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="rights">{t.rights}</p>
+    </div>
+    <div class="footer-seal">
+      <Image src={logoMark} alt="" widths={[96, 160]} sizes="64px" />
+    </div>
+    <p class="motto">
+      <span>{t.footerTomorrow}</span>
+    </p>
+  </div>
+</footer>
