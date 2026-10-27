@@ -9,7 +9,7 @@ npm run check    # astro check (TypeScript and .astro diagnostics)
 npm run build    # static site in dist/
 ```
 
-Node 22 or newer is required.
+Node 22.23.4 or newer is required (Astro 7.4).
 
 Design spec, project summary and moodboard are in `docs/`.
 
