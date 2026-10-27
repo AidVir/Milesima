@@ -33,7 +33,7 @@ jobs:
         run: |
           set -o pipefail
           if ! npm run check 2>&1 | tee check.log; then
-            grep -iE "error|cannot|failed" check.log | head -20 | sed 's/^/::error::/'
+            sed 's/\x1b\[[0-9;]*m//g' check.log | grep -v '^[[:space:]]*$' | tail -25 | sed 's/^/::error::/'
             exit 1
           fi
       - run: npm run build
